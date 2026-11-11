@@ -1,30 +1,38 @@
-# DINOv2-Based Industrial Anomaly Detection with Vision-Language-Model-Generated Quality Control Reports
+<h1 align="center">DINOv2-Based Industrial Anomaly Detection<br>with Vision-Language-Model-Generated Quality Control Reports</h1>
 
-**MSc thesis in Data Science** · University of Debrecen, Faculty of Informatics · 2026
-
-**Author:** Mehmet Övgü Hun
+<p align="center">
+  <b>Mehmet Övgü Hun</b><br>
+  MSc thesis in Data Science<br>
+  University of Debrecen, Faculty of Informatics<br>
+  2026
+</p>
 
 ---
 
-This repository holds the code and the results of the thesis. The study has
-two parts:
+> **Abstract.** This repository holds the code and the results of the thesis.
+> The thesis compares Dinomaly, a detector built on the frozen DINOv2 image
+> encoder, with PatchCore and EfficientAD-S on 3,887 test images from MVTec AD
+> and VisA. It then studies 162 structured quality-control reports that a
+> frozen, quantised Qwen2.5-VL-3B-Instruct wrote for 54 test images under
+> three conditions: the image alone, the image with detector evidence, and the
+> same with a retrieved knowledge card. Detector evidence raised the number of
+> reports with a correct inspection status from 34 to 42 of 54, while the
+> detector alone was correct on 53. Retrieval left the number at 42.
 
-1. **Anomaly detection.** Dinomaly, a DINOv2-based anomaly detector, is
-   compared with PatchCore and EfficientAD-S on MVTec AD and VisA.
+## Contents
 
-2. **Inspection reports.** A frozen Qwen2.5-VL-3B-Instruct writes structured
-   inspection reports. The study tests whether they become more accurate
-   when the model receives Dinomaly's evidence and a retrieved knowledge card
-   about the product category.
+1. [Overview](#1-overview)
+2. [Results](#2-results)
+3. [Repository layout](#3-repository-layout)
+4. [Installation](#4-installation)
+5. [Quick check](#5-quick-check)
+6. [Data and weights](#6-data-and-weights)
+7. [Reproducing the experiments](#7-reproducing-the-experiments)
+8. [Reproducibility](#8-reproducibility)
+9. [Licences](#9-licences)
+10. [Citation](#10-citation)
 
-**Contents:** [Overview](#overview) · [Results](#results) ·
-[Repository layout](#repository-layout) · [Installation](#installation) ·
-[Quick check](#quick-check) · [Data and weights](#data-and-weights) ·
-[Reproducing the experiments](#reproducing-the-experiments) ·
-[Reproducibility](#reproducibility) · [Licences](#licences) ·
-[Citation](#citation)
-
-## Overview
+## 1. Overview
 
 Qwen writes a structured inspection report for each of 54 test images, one
 normal and one anomalous from each of the 27 categories, in three conditions:
@@ -35,7 +43,7 @@ normal and one anomalous from each of the 27 categories, in three conditions:
 | D0: + detector | the image with Dinomaly's score, cutoff and prediction, and an overlay of its anomaly map when the prediction is anomalous |
 | D1: + knowledge card | D0 with a knowledge card about the product category, when E5-small-v2 retrieves that category's own card |
 
-### Research questions
+### 1.1 Research questions
 
 As stated in the thesis (VLM: vision-language model).
 
@@ -56,7 +64,7 @@ information retrieved from a curated defect knowledge base affect the
 correctness of the resulting reports and the share of reports that contain
 unsupported or incorrect statements?
 
-### Key findings
+### 1.2 Key findings
 
 - **Detectors.** Dinomaly has the highest mean image AUROC and AU-PRO on both
   datasets. Mean pixel AUROC differs by at most 0.4 points between the
@@ -68,9 +76,9 @@ unsupported or incorrect statements?
 - **Knowledge card (D1).** Correct status stays at 42 of 54. Useful reports
   go from 24 to 25, and reports with a material error from 26 to 28.
 
-## Results
+## 2. Results
 
-Both studies at a glance. Click a chart for its full size.
+Figures 1 and 2 show both studies at a glance; click a chart for its full size.
 
 <table>
   <tr>
@@ -78,15 +86,15 @@ Both studies at a glance. Click a chart for its full size.
     <td width="50%" align="center" valign="middle"><a href="results/reports/status_confusion_matrices.png"><img src="results/reports/status_confusion_matrices.png" alt="Report status against the image label for I0, D0, D1 and Dinomaly alone, on the same 54 images"></a></td>
   </tr>
   <tr>
-    <td align="center"><sub><b>Detectors (RQ1).</b> Mean over the product categories of each dataset, in per cent. I and P mark image-level and pixel-level metrics.</sub></td>
-    <td align="center"><sub><b>Reports (RQ2, RQ3).</b> Report status against the image label on the same 54 images. Each cell gives the count and its share of the 27 images in that row; “uncertain” never counts as correct.</sub></td>
+    <td align="center"><sub><b>Figure 1.</b> Detectors (RQ1). Mean over the product categories of each dataset, in per cent. I and P mark image-level and pixel-level metrics.</sub></td>
+    <td align="center"><sub><b>Figure 2.</b> Reports (RQ2, RQ3). Report status against the image label on the same 54 images. Each cell gives the count and its share of the 27 images in that row; “uncertain” never counts as correct.</sub></td>
   </tr>
 </table>
 
-### Anomaly detection (RQ1)
+### 2.1 Anomaly detection (RQ1)
 
-Mean over the categories of each dataset, in per cent. The best value per
-dataset is in bold.
+**Table 1.** Mean over the categories of each dataset, in per cent. The best
+value per dataset is in bold.
 
 | Detector | Dataset | Image AUROC | Pixel AUROC | AU-PRO |
 | --- | --- | ---: | ---: | ---: |
@@ -97,7 +105,7 @@ dataset is in bold.
 | EfficientAD-S | VisA | 97.91 | 98.77 | 91.90 |
 | Dinomaly | VisA | **98.85** | 98.77 | **95.10** |
 
-Notes on the table:
+Notes on Table 1:
 
 - On VisA, EfficientAD-S and Dinomaly both round to 98.77 in pixel AUROC, so
   neither value is in bold.
@@ -117,9 +125,10 @@ Notes on the table:
   [MVTec AD](results/detector/comparison_mvtec_ad.png) and
   [VisA](results/detector/comparison_visa.png).
 
-### Inspection reports (RQ2, RQ3)
+### 2.2 Inspection reports (RQ2, RQ3)
 
-Reports out of 54 per condition ([results/reports/](results/reports/)):
+**Table 2.** Reports out of 54 per condition
+([results/reports/](results/reports/)).
 
 | | I0: image | D0: + detector | D1: + knowledge card |
 | --- | ---: | ---: | ---: |
@@ -127,7 +136,7 @@ Reports out of 54 per condition ([results/reports/](results/reports/)):
 | Useful report | 21/54 (38.9%) | 24/54 (44.4%) | 25/54 (46.3%) |
 | Report with a material error | 32/54 (59.3%) | 26/54 (48.1%) | 28/54 (51.9%) |
 
-How to read the table:
+Notes on Table 2:
 
 - **Detector alone.** Dinomaly's own prediction is anomalous when its score
   is above a per-category cutoff (the 0.98 quantile of its scores on the
@@ -149,20 +158,21 @@ How to read the table:
   describes the grades, and `summary.csv` and `paired_changes.csv` there
   hold all measures.
 
-## Repository layout
+## 3. Repository layout
 
-| Folder | Contents |
-| --- | --- |
-| `scripts/` | the eight pipeline steps, run in order (see below) |
-| `src/` | the modules the steps share: dataset reading, metrics, prediction files, figures |
-| `configs/` | reporting settings, the prompt and the report schema |
-| `knowledge/` | the 27 knowledge cards, one per category, with sources |
-| `third_party/` | unmodified PatchCore, EfficientAD and Dinomaly code |
-| `results/` | the reported results |
-| `tests/` | unit tests |
-| `licenses/` | licence texts for other included code |
+```
+.
+├── scripts/        the eight pipeline steps, run in order (Section 7)
+├── src/            modules the steps share: datasets, metrics, predictions, figures
+├── configs/        reporting settings, the prompt and the report schema
+├── knowledge/      the 27 knowledge cards, one per category, with sources
+├── results/        the reported results
+├── tests/          unit tests
+├── third_party/    unmodified PatchCore, EfficientAD and Dinomaly code
+└── licenses/       licence texts for other included code
+```
 
-## Installation
+## 4. Installation
 
 Linux with Python 3.12 and an NVIDIA GPU that supports CUDA 13.0 and
 bfloat16. The reported runs used an RTX 5070 Laptop GPU.
@@ -175,9 +185,9 @@ python -m unittest discover tests
 ```
 
 Two of the tests read the datasets and are skipped until they are in place
-(see [Data and weights](#data-and-weights)).
+(see [Section 6](#6-data-and-weights)).
 
-## Quick check
+## 5. Quick check
 
 The report summaries can be reproduced in seconds, without data, weights or
 a GPU:
@@ -194,7 +204,7 @@ cmp outputs/reports/paired_changes.csv results/reports/paired_changes.csv
 afterwards: 07 does not overwrite an existing `reports.csv`, and 08 accepts a
 grade only for the answer it was given for.
 
-## Data and weights
+## 6. Data and weights
 
 Extract the datasets so that these paths exist:
 
@@ -230,7 +240,7 @@ The other models download on first use: torchvision's WideResNet-50-2
 (`IMAGENET1K_V1` weights) for PatchCore, and E5-small-v2 and
 Qwen2.5-VL-3B-Instruct at the revisions in `configs/reporting.json`.
 
-## Reproducing the experiments
+## 7. Reproducing the experiments
 
 Run each script from the repository root as `python -m scripts.<name>`, for
 example `python -m scripts.03_dinomaly`. For the full study, run all eight in
@@ -262,7 +272,7 @@ is never overwritten. On its first run, 08 writes an empty grading sheet,
 `outputs/reports/grades.csv`, and stops: grade the reports as described in
 [results/reports/README.md](results/reports/README.md) and run it again.
 
-## Reproducibility
+## 8. Reproducibility
 
 `results/` holds the reported results and is never written by the scripts;
 they write to `outputs/`, under the same paths:
@@ -294,9 +304,9 @@ Expected agreement with the reported results:
   regenerated reports can match the reported ones only when `cases.csv`
   does; the GPU and library versions matter as well. The grades in
   `results/reports/` belong to the reports there, and together they give the
-  published summaries (see the [quick check](#quick-check)).
+  published summaries (see [Section 5](#5-quick-check)).
 
-## Licences
+## 9. Licences
 
 The code is under the Apache License 2.0 ([LICENSE](LICENSE)). Code and text
 from other projects keep their licences: see [NOTICE](NOTICE),
@@ -306,7 +316,19 @@ dataset licences (see NOTICE). MVTec AD is under CC BY-NC-SA 4.0
 (non-commercial), VisA under CC BY 4.0, E5-small-v2 under the MIT License and
 Qwen2.5-VL-3B-Instruct under the Qwen Research License.
 
-## Citation
+## 10. Citation
 
-[CITATION.cff](CITATION.cff) gives the citation for this repository (GitHub
-shows it under "Cite this repository") and lists the works it builds on.
+```bibtex
+@mastersthesis{hun2026dinov2,
+  author = {Hun, Mehmet Övgü},
+  title  = {{DINOv2}-Based Industrial Anomaly Detection with
+            Vision-Language-Model-Generated Quality Control Reports},
+  school = {University of Debrecen, Faculty of Informatics},
+  year   = {2026},
+  type   = {{MSc} thesis}
+}
+```
+
+[CITATION.cff](CITATION.cff) gives the same citation for this repository
+(GitHub shows it under "Cite this repository") and lists the works it builds
+on.
