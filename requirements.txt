@@ -1,0 +1,26 @@
+# Python 3.12, CUDA 13.0, Linux x86_64
+# Install: pip install -r requirements.txt
+--extra-index-url https://download.pytorch.org/whl/cu130
+
+# Common
+numpy==2.5.2
+pillow==12.3.0
+scipy==1.18.1
+matplotlib==3.11.2
+tqdm==4.70.1
+faiss-cpu==1.15.1
+
+# Anomaly detection: PatchCore, EfficientAD-S, Dinomaly
+torch==2.11.0+cu130
+torchvision==0.26.0+cu130
+timm==0.9.12
+scikit-learn==1.9.1
+scikit-image==0.26.0
+tifffile==2026.10.15
+
+# Retrieval and reports: E5 embeddings, Qwen2.5-VL-3B in 4-bit
+transformers==5.22.1
+tokenizers==0.23.3
+accelerate==1.15.0
+bitsandbytes==0.50.2
+jsonschema==4.26.0

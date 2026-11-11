@@ -1,0 +1,3 @@
+dataset,image_auroc,image_ap,image_f1_max,pixel_auroc,pixel_ap,pixel_f1_max,aupro
+mvtec_ad,99.69,99.83,99.27,98.35,66.53,67.42,94.89
+visa,98.85,99.00,96.51,98.77,47.53,51.95,95.10

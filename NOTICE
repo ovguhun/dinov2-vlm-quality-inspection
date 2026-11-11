@@ -1,0 +1,97 @@
+Industrial anomaly detection and inspection reports - MSc thesis code
+Copyright 2026 Mehmet Övgü Hun
+
+This project is licensed under the Apache License, Version 2.0 (see LICENSE).
+It includes or adapts code from the projects below. Copied files keep their
+original headers; adapted code names its source where it appears.
+
+
+PatchCore
+https://github.com/amazon-science/patchcore-inspection
+Commit fcaa92f124fb1ad74a7acf56726decd4b27cbcad, Apache License 2.0
+Used in: third_party/patchcore/, scripts/01_patchcore.py
+
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+
+EfficientAD (unofficial implementation by nelson1425)
+https://github.com/nelson1425/EfficientAD
+Commit fcab5146f84ae17597044ad5ddf1656ccf805401, Apache License 2.0
+Used in: third_party/efficientad/, scripts/02_efficientad.py
+
+
+Dinomaly
+https://github.com/guojiajeremy/Dinomaly
+Commit 1f252be03a918789b19848f0ca37166e7c28dada, Apache License 2.0
+Used in: third_party/dinomaly/, scripts/03_dinomaly.py
+
+Copyright [2025] [Jia Guo]
+
+Dinomaly includes model code from DINOv2 (dinov2/) and DINO
+(models/vision_transformer.py):
+Copyright (c) Meta Platforms, Inc. and affiliates.
+Copyright (c) Facebook, Inc. and its affiliates.
+Parts of both are modified from timm (pytorch-image-models), Apache License
+2.0: Copyright 2019 Ross Wightman.
+
+
+Anomalib
+https://github.com/open-edge-platform/anomalib
+Commit 0be85508edde53a2b1062ee6d1732c85c5b7172e, Apache License 2.0
+Used in: src/metrics.py (AU-PRO computation)
+
+Copyright (C) 2020-2021 Intel Corporation
+Copyright (C) 2022-2026 Intel Corporation
+
+
+SpotDiff (VisA)
+https://github.com/amazon-science/spot-diff
+Commit 2a692ab575001cbde74d402d897a7286086c6199, Apache License 2.0
+Used in: knowledge/defect_cards.csv (VisA defect names from utils/id2class.py,
+in lower case and with "Particals" corrected to "particles", and the data
+description in README.md); src/datasets.py (the
+split_csv/1cls.csv split)
+
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+
+MVTec AD paper (Bergmann et al., International Journal of Computer Vision, 2021)
+https://doi.org/10.1007/s11263-020-01400-4
+Creative Commons Attribution 4.0, https://creativecommons.org/licenses/by/4.0/
+Used in: knowledge/defect_cards.csv (MVTec AD defect names from Table 8 and
+short paraphrased category descriptions)
+
+© The Author(s) 2021
+
+
+E5 text embeddings (intfloat/e5-small-v2)
+https://huggingface.co/intfloat/e5-small-v2
+Revision ffb93f3bd4047442299a41ebb6fa998a38507c52, MIT License
+Used in: scripts/06_retrieve_knowledge.py (average_pool from the usage
+example of the model card)
+
+Copyright (c) Microsoft Corporation
+The MIT License text is in licenses/E5-MIT.txt.
+
+
+Other knowledge-card sources (each card names its sources and links): FAA
+Advisory Circular AC 20-37E; PMD Aerospace, Workmanship Standard; Infineon
+Technologies, Recommendations for board assembly of Infineon transistor
+outline type packages; YKK Americas, The Structure of a Zipper. Short
+definitions and descriptions in the cards are shortened or reworded from
+these documents, which remain the property of their owners.
+
+
+Dataset images in results/detector/<detector>/
+The PNG figures there show MVTec AD and VisA test images and their
+ground-truth masks, cropped, resized and overlaid with anomaly maps. They are
+not covered by this project's Apache License but shared under the dataset
+licences:
+- MVTec AD: Copyright 2019 MVTec Software GmbH, Creative Commons
+  Attribution-NonCommercial-ShareAlike 4.0,
+  https://creativecommons.org/licenses/by-nc-sa/4.0/
+- VisA: Copyright Amazon.com, Inc. or its affiliates, Creative Commons
+  Attribution 4.0, https://creativecommons.org/licenses/by/4.0/
+
+The datasets themselves and the model weights are not included. Their
+sources are listed in README.md.

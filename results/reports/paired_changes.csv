@@ -1,0 +1,13 @@
+comparison,measure,better,same,worse,exact_p
+D0 vs I0,status,9,44,1,0.0215
+D0 vs I0,usefulness,7,45,2,0.1797
+D0 vs I0,material error,6,48,0,0.0312
+D0 vs I0,internal contradiction,4,49,1,0.3750
+D1 vs D0,status,4,46,4,1.0000
+D1 vs D0,usefulness,6,44,4,0.7539
+D1 vs D0,material error,2,48,4,0.6875
+D1 vs D0,internal contradiction,2,48,4,0.6875
+"D1 vs D0, card shown",status,4,40,4,1.0000
+"D1 vs D0, card shown",usefulness,6,38,4,0.7539
+"D1 vs D0, card shown",material error,2,42,4,0.6875
+"D1 vs D0, card shown",internal contradiction,2,42,4,0.6875

@@ -1,0 +1,16 @@
+Is there a defect in this {category}? Describe what is visible in the original photo.
+Return one JSON object with these six keys:
+visual_evidence: one short sentence about appearance or a specific visibility limitation.
+inspection_status: "normal", "anomalous", or "uncertain".
+defect_type: short visible description, or null.
+location: short description of the relevant sites, or null.
+severity_estimate: "limited", "moderate", "extensive", or null; visible appearance only.
+recommended_action: a bounded next inspection step, or null.
+
+Impact meanings:
+limited: localized appearance change without marked disruption of shape, continuity or arrangement.
+moderate: contained alteration of shape, continuity or arrangement; structure remains largely recognizable.
+extensive: widespread alteration or marked overall loss, displacement or deformation.
+Use the highest clearly supported band for multiple sites and identify its site.
+Use null for defect-specific answers that are inapplicable or cannot be established.
+Keep descriptions short; appearance impact does not establish functionality or safety.

@@ -1,0 +1,37 @@
+measure,I0,D0,D1,detector
+valid reports,54/54 (100.0%),54/54 (100.0%),54/54 (100.0%),
+correct status,34/54 (63.0%),42/54 (77.8%),42/54 (77.8%),53/54 (98.1%)
+anomalous images called anomalous,10/27 (37.0%),16/27 (59.3%),17/27 (63.0%),26/27 (96.3%)
+normal images called normal,24/27 (88.9%),26/27 (96.3%),25/27 (92.6%),27/27 (100.0%)
+normal images called anomalous,3/27 (11.1%),1/27 (3.7%),2/27 (7.4%),0/27 (0.0%)
+anomalous images called normal,17/27 (63.0%),10/27 (37.0%),8/27 (29.6%),1/27 (3.7%)
+uncertain status,0/54 (0.0%),1/54 (1.9%),2/54 (3.7%),0/54 (0.0%)
+useful,21/54 (38.9%),24/54 (44.4%),25/54 (46.3%),
+partly useful,12/54 (22.2%),13/54 (24.1%),12/54 (22.2%),
+not useful,21/54 (38.9%),17/54 (31.5%),17/54 (31.5%),
+"useful, normal images",19/27 (70.4%),22/27 (81.5%),21/27 (77.8%),
+"useful, anomalous images",2/27 (7.4%),2/27 (7.4%),4/27 (14.8%),
+material error,32/54 (59.3%),26/54 (48.1%),28/54 (51.9%),
+internal contradiction,7/54 (13.0%),4/54 (7.4%),6/54 (11.1%),
+"material error, of correct status",12/34 (35.3%),14/42 (33.3%),16/42 (38.1%),
+location answered,22/26 (84.6%),23/26 (88.5%),21/26 (80.8%),
+location correct,3/26 (11.5%),2/26 (7.7%),3/26 (11.5%),
+location partly correct,9/26 (34.6%),12/26 (46.2%),12/26 (46.2%),
+location wrong,7/26 (26.9%),7/26 (26.9%),4/26 (15.4%),
+location not established,3/26 (11.5%),2/26 (7.7%),2/26 (7.7%),
+"location correct, of answered",3/22 (13.6%),2/23 (8.7%),3/21 (14.3%),
+location missing,4/26 (15.4%),3/26 (11.5%),5/26 (19.2%),
+"location appropriately empty, normal images",16/27 (59.3%),22/27 (81.5%),21/27 (77.8%),
+status agrees with the detector,,43/54 (79.6%),43/54 (79.6%),
+detector score: attempted,,0/54 (0.0%),0/54 (0.0%),
+"detector score: fully faithful, of attempted",,undefined,undefined,
+detector score: fully faithful,,0/54 (0.0%),0/54 (0.0%),
+detector decision: attempted,,0/54 (0.0%),0/54 (0.0%),
+"detector decision: fully faithful, of attempted",,undefined,undefined,
+detector decision: fully faithful,,0/54 (0.0%),0/54 (0.0%),
+detector attribution: attempted,,3/54 (5.6%),2/54 (3.7%),
+"detector attribution: fully faithful, of attempted",,0/3 (0.0%),1/2 (50.0%),
+detector attribution: fully faithful,,0/54 (0.0%),1/54 (1.9%),
+detector overlay: attempted,,0/26 (0.0%),1/26 (3.8%),
+"detector overlay: fully faithful, of attempted",,undefined,1/1 (100.0%),
+detector overlay: fully faithful,,0/26 (0.0%),1/26 (3.8%),

@@ -1,0 +1,1621 @@
+case_id,condition,dataset,category,image_id,detector_prediction,overlay_shown,card_shown,valid,problem,visual_evidence,inspection_status,defect_type,location,severity_estimate,recommended_action,raw_output
+case-001,I0,mvtec_ad,bottle,mvtec_ad/bottle/test/good/015.png,,no,no,yes,,The bottle appears to be intact with no visible signs of damage or wear.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The bottle appears to be intact with no visible signs of damage or wear."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-001,D0,mvtec_ad,bottle,mvtec_ad/bottle/test/good/015.png,normal,no,no,yes,,The bottle appears to be intact with no visible signs of damage or defects.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The bottle appears to be intact with no visible signs of damage or defects."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-001,D1,mvtec_ad,bottle,mvtec_ad/bottle/test/good/015.png,normal,no,yes,yes,,The bottle appears to be intact with no visible signs of damage or contamination.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The bottle appears to be intact with no visible signs of damage or contamination."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-002,I0,mvtec_ad,bottle,mvtec_ad/bottle/test/contamination/010.png,,no,no,yes,,"The bottle appears to be a dark-colored container with a reflective surface, possibly made of glass or a similar material.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The bottle appears to be a dark-colored container with a reflective surface, possibly made of glass or a similar material."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-002,D0,mvtec_ad,bottle,mvtec_ad/bottle/test/contamination/010.png,anomalous,yes,no,yes,,"The image shows a close-up of a bottle's opening, with a focus on the inner surface. The reflection in the center suggests the presence of a liquid or a reflective material.",normal,none,bottle opening,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The image shows a close-up of a bottle's opening, with a focus on the inner surface. The reflection in the center suggests the presence of a liquid or a reflective material."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""none"",
+  ""location"": ""bottle opening"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-002,D1,mvtec_ad,bottle,mvtec_ad/bottle/test/contamination/010.png,anomalous,yes,yes,yes,,"The image shows a close-up of a bottle's opening, with a focus on the inner surface. The reflection in the center suggests a possible defect or anomaly.",anomalous,possible contamination,center of the bottle opening,limited,Further inspection to identify the cause of the anomaly.,"```json
+{
+  ""visual_evidence"": ""The image shows a close-up of a bottle's opening, with a focus on the inner surface. The reflection in the center suggests a possible defect or anomaly."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""possible contamination"",
+  ""location"": ""center of the bottle opening"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to identify the cause of the anomaly.""
+}
+```"
+case-003,I0,mvtec_ad,cable,mvtec_ad/cable/test/good/027.png,,no,no,yes,,The cable has three colored wires with visible insulation and copper strands.,normal,none,cable core,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The cable has three colored wires with visible insulation and copper strands."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""none"",
+  ""location"": ""cable core"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-003,D0,mvtec_ad,cable,mvtec_ad/cable/test/good/027.png,normal,no,no,yes,,The cable has three colored wires with different colors and sizes.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The cable has three colored wires with different colors and sizes."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-003,D1,mvtec_ad,cable,mvtec_ad/cable/test/good/027.png,normal,no,yes,yes,,"The cable has three colored wires with different colors and sizes, and the insulation is visible.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The cable has three colored wires with different colors and sizes, and the insulation is visible."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-004,I0,mvtec_ad,cable,mvtec_ad/cable/test/bent_wire/006.png,,no,no,yes,,"The cable appears to have different colored insulation layers, with one section showing a greenish hue and another showing a blue hue.",normal,color variation in insulation,cable insulation,limited,Conduct a closer inspection to identify the exact cause of the color variation.,"```json
+{
+  ""visual_evidence"": ""The cable appears to have different colored insulation layers, with one section showing a greenish hue and another showing a blue hue."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""color variation in insulation"",
+  ""location"": ""cable insulation"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Conduct a closer inspection to identify the exact cause of the color variation.""
+}
+```"
+case-004,D0,mvtec_ad,cable,mvtec_ad/cable/test/bent_wire/006.png,anomalous,yes,no,yes,,"The image shows a close-up of a cable with three different colored sections, each containing a cluster of small, shiny objects.",normal,none,cable sections,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The image shows a close-up of a cable with three different colored sections, each containing a cluster of small, shiny objects."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""none"",
+  ""location"": ""cable sections"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-004,D1,mvtec_ad,cable,mvtec_ad/cable/test/bent_wire/006.png,anomalous,yes,yes,yes,,"The image shows a cable with a damaged section, indicated by the red highlight.",anomalous,bent wire,inner insulation,moderate,Further inspection to determine the extent of the damage.,"```json
+{
+  ""visual_evidence"": ""The image shows a cable with a damaged section, indicated by the red highlight."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""bent wire"",
+  ""location"": ""inner insulation"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to determine the extent of the damage.""
+}
+```"
+case-005,I0,mvtec_ad,capsule,mvtec_ad/capsule/test/good/008.png,,no,no,yes,,The capsule has a black cap and an orange body with the number '500' printed on it.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The capsule has a black cap and an orange body with the number '500' printed on it."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-005,D0,mvtec_ad,capsule,mvtec_ad/capsule/test/good/008.png,normal,no,no,yes,,The capsule has a black cap and an orange body with the number '500' printed on it.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The capsule has a black cap and an orange body with the number '500' printed on it."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-005,D1,mvtec_ad,capsule,mvtec_ad/capsule/test/good/008.png,normal,no,yes,yes,,The capsule has a black cap and an orange body with the number '500' printed on it.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The capsule has a black cap and an orange body with the number '500' printed on it."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-006,I0,mvtec_ad,capsule,mvtec_ad/capsule/test/scratch/000.png,,no,no,yes,,The capsule has a black and orange color scheme with the number '500' printed on it.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The capsule has a black and orange color scheme with the number '500' printed on it."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-006,D0,mvtec_ad,capsule,mvtec_ad/capsule/test/scratch/000.png,anomalous,yes,no,yes,,"The capsule appears to have a red tint, which is not present in the original image.",anomalous,red tint,entire capsule,moderate,Re-examine the image for any other anomalies.,"```json
+{
+  ""visual_evidence"": ""The capsule appears to have a red tint, which is not present in the original image."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""red tint"",
+  ""location"": ""entire capsule"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Re-examine the image for any other anomalies.""
+}
+```"
+case-006,D1,mvtec_ad,capsule,mvtec_ad/capsule/test/scratch/000.png,anomalous,yes,yes,yes,,The capsule has a black and orange color scheme with the number '500' printed on it.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The capsule has a black and orange color scheme with the number '500' printed on it."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-007,I0,mvtec_ad,carpet,mvtec_ad/carpet/test/good/017.png,,no,no,yes,,The carpet has a consistent woven pattern with no visible defects.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The carpet has a consistent woven pattern with no visible defects."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-007,D0,mvtec_ad,carpet,mvtec_ad/carpet/test/good/017.png,normal,no,no,yes,,The image shows a close-up of a woven fabric with a consistent pattern.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The image shows a close-up of a woven fabric with a consistent pattern."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-007,D1,mvtec_ad,carpet,mvtec_ad/carpet/test/good/017.png,normal,no,yes,yes,,The image shows a close-up of a woven fabric with a consistent pattern.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The image shows a close-up of a woven fabric with a consistent pattern."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-008,I0,mvtec_ad,carpet,mvtec_ad/carpet/test/metal_contamination/000.png,,no,no,yes,,"There is a small, irregularly shaped dark spot on the carpet.",anomalous,dark spot,center of the carpet,limited,Conduct a closer inspection to determine the cause and extent of the defect.,"```json
+{
+  ""visual_evidence"": ""There is a small, irregularly shaped dark spot on the carpet."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""dark spot"",
+  ""location"": ""center of the carpet"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Conduct a closer inspection to determine the cause and extent of the defect.""
+}
+```"
+case-008,D0,mvtec_ad,carpet,mvtec_ad/carpet/test/metal_contamination/000.png,anomalous,yes,no,yes,,"A small, irregularly shaped dark spot is visible in the center of the carpet.",anomalous,dark spot,center of the carpet,limited,Conduct a closer inspection to determine the cause and extent of the defect.,"```json
+{
+  ""visual_evidence"": ""A small, irregularly shaped dark spot is visible in the center of the carpet."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""dark spot"",
+  ""location"": ""center of the carpet"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Conduct a closer inspection to determine the cause and extent of the defect.""
+}
+```"
+case-008,D1,mvtec_ad,carpet,mvtec_ad/carpet/test/metal_contamination/000.png,anomalous,yes,yes,yes,,"A small, irregularly shaped dark spot is visible in the center of the carpet.",anomalous,dark spot,center of the carpet,limited,Conduct a closer inspection to determine the cause and extent of the defect.,"```json
+{
+  ""visual_evidence"": ""A small, irregularly shaped dark spot is visible in the center of the carpet."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""dark spot"",
+  ""location"": ""center of the carpet"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Conduct a closer inspection to determine the cause and extent of the defect.""
+}
+```"
+case-009,I0,mvtec_ad,grid,mvtec_ad/grid/test/good/010.png,,no,no,yes,,The grid appears to have a consistent pattern with no visible defects.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The grid appears to have a consistent pattern with no visible defects."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-009,D0,mvtec_ad,grid,mvtec_ad/grid/test/good/010.png,normal,no,no,yes,,The grid appears to be uniformly textured with no visible defects.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The grid appears to be uniformly textured with no visible defects."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-009,D1,mvtec_ad,grid,mvtec_ad/grid/test/good/010.png,normal,no,yes,yes,,"The grid appears to have a uniform, regular pattern with no visible defects.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The grid appears to have a uniform, regular pattern with no visible defects."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-010,I0,mvtec_ad,grid,mvtec_ad/grid/test/glue/007.png,,no,no,yes,,"There is a small, irregularly shaped dark spot visible in the center of the grid.",normal,dark spot,center of the grid,limited,Conduct a closer inspection to determine the cause and potential impact.,"```json
+{
+  ""visual_evidence"": ""There is a small, irregularly shaped dark spot visible in the center of the grid."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""dark spot"",
+  ""location"": ""center of the grid"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Conduct a closer inspection to determine the cause and potential impact.""
+}
+```"
+case-010,D0,mvtec_ad,grid,mvtec_ad/grid/test/glue/007.png,anomalous,yes,no,yes,,"A small, irregularly shaped dark spot is visible within the grid.",anomalous,small dark spot,center of the grid,limited,Conduct a closer inspection to determine the cause and extent of the defect.,"```json
+{
+  ""visual_evidence"": ""A small, irregularly shaped dark spot is visible within the grid."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""small dark spot"",
+  ""location"": ""center of the grid"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Conduct a closer inspection to determine the cause and extent of the defect.""
+}
+```"
+case-010,D1,mvtec_ad,grid,mvtec_ad/grid/test/glue/007.png,anomalous,yes,yes,yes,,"A small, irregularly shaped dark spot is visible within the grid pattern.",anomalous,foreign material,center of the grid,limited,Conduct a closer inspection to determine the nature and cause of the foreign material.,"```json
+{
+  ""visual_evidence"": ""A small, irregularly shaped dark spot is visible within the grid pattern."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""foreign material"",
+  ""location"": ""center of the grid"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Conduct a closer inspection to determine the nature and cause of the foreign material.""
+}
+```"
+case-011,I0,mvtec_ad,hazelnut,mvtec_ad/hazelnut/test/good/022.png,,no,no,yes,,The hazelnut has a slightly irregular shape with a visible crack on the top.,normal,crack,top,limited,Further inspection to assess the extent of the crack.,"```json
+{
+  ""visual_evidence"": ""The hazelnut has a slightly irregular shape with a visible crack on the top."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""crack"",
+  ""location"": ""top"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to assess the extent of the crack.""
+}
+```"
+case-011,D0,mvtec_ad,hazelnut,mvtec_ad/hazelnut/test/good/022.png,normal,no,no,yes,,The hazelnut has a slightly irregular shape with a visible crack on the top.,anomalous,crack,top,moderate,Further inspection to assess the extent of the crack and its impact on the nut's quality.,"```json
+{
+  ""visual_evidence"": ""The hazelnut has a slightly irregular shape with a visible crack on the top."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""crack"",
+  ""location"": ""top"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to assess the extent of the crack and its impact on the nut's quality.""
+}
+```"
+case-011,D1,mvtec_ad,hazelnut,mvtec_ad/hazelnut/test/good/022.png,normal,no,yes,yes,,The hazelnut has a slightly irregular shape with a visible crack on the top.,anomalous,crack,top,moderate,Further inspection to assess the extent of the crack and its impact on the nut's integrity.,"```json
+{
+  ""visual_evidence"": ""The hazelnut has a slightly irregular shape with a visible crack on the top."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""crack"",
+  ""location"": ""top"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to assess the extent of the crack and its impact on the nut's integrity.""
+}
+```"
+case-012,I0,mvtec_ad,hazelnut,mvtec_ad/hazelnut/test/cut/010.png,,no,no,yes,,The hazelnut has a visible crack on its surface.,anomalous,crack,center of the hazelnut,moderate,Further inspection to determine the extent of the crack and its impact on the nut's quality.,"```json
+{
+  ""visual_evidence"": ""The hazelnut has a visible crack on its surface."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""crack"",
+  ""location"": ""center of the hazelnut"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to determine the extent of the crack and its impact on the nut's quality.""
+}
+```"
+case-012,D0,mvtec_ad,hazelnut,mvtec_ad/hazelnut/test/cut/010.png,anomalous,yes,no,yes,,"The hazelnut has a visible insect larva inside, which is not typical for a healthy nut.",anomalous,insect infestation,inside the hazelnut,moderate,Inspect the entire batch for similar defects.,"```json
+{
+  ""visual_evidence"": ""The hazelnut has a visible insect larva inside, which is not typical for a healthy nut."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""insect infestation"",
+  ""location"": ""inside the hazelnut"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Inspect the entire batch for similar defects.""
+}
+```"
+case-012,D1,mvtec_ad,hazelnut,mvtec_ad/hazelnut/test/cut/010.png,anomalous,yes,yes,yes,,The hazelnut has a visible crack on its surface.,anomalous,crack,center of the hazelnut,moderate,Further inspection to assess the extent of the crack and its impact on the hazelnut's quality.,"```json
+{
+  ""visual_evidence"": ""The hazelnut has a visible crack on its surface."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""crack"",
+  ""location"": ""center of the hazelnut"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to assess the extent of the crack and its impact on the hazelnut's quality.""
+}
+```"
+case-013,I0,mvtec_ad,leather,mvtec_ad/leather/test/good/018.png,,no,no,yes,,The leather appears to be uniformly textured with no visible defects.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The leather appears to be uniformly textured with no visible defects."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-013,D0,mvtec_ad,leather,mvtec_ad/leather/test/good/018.png,normal,no,no,yes,,The image shows a close-up of brown leather with a consistent texture.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The image shows a close-up of brown leather with a consistent texture."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-013,D1,mvtec_ad,leather,mvtec_ad/leather/test/good/018.png,normal,no,yes,yes,,The image shows a close-up of brown leather with a consistent texture.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The image shows a close-up of brown leather with a consistent texture."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-014,I0,mvtec_ad,leather,mvtec_ad/leather/test/color/017.png,,no,no,yes,,"There is a small, irregularly shaped dark spot on the leather surface.",anomalous,dark spot,center-right of the image,limited,Further inspection to determine if the defect is present on other parts of the leather product.,"```json
+{
+  ""visual_evidence"": ""There is a small, irregularly shaped dark spot on the leather surface."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""dark spot"",
+  ""location"": ""center-right of the image"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to determine if the defect is present on other parts of the leather product.""
+}
+```"
+case-014,D0,mvtec_ad,leather,mvtec_ad/leather/test/color/017.png,anomalous,yes,no,yes,,"A small, irregularly shaped dark spot is present on the leather surface.",anomalous,dark spot,center-right of the image,limited,Further inspection to determine if the defect is present in other areas.,"```json
+{
+  ""visual_evidence"": ""A small, irregularly shaped dark spot is present on the leather surface."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""dark spot"",
+  ""location"": ""center-right of the image"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to determine if the defect is present in other areas.""
+}
+```"
+case-014,D1,mvtec_ad,leather,mvtec_ad/leather/test/color/017.png,anomalous,yes,yes,yes,,"A small, irregularly shaped dark spot is present on the leather surface.",anomalous,color,center-right of the image,limited,Further inspection to determine if the defect is present in other areas.,"```json
+{
+  ""visual_evidence"": ""A small, irregularly shaped dark spot is present on the leather surface."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""color"",
+  ""location"": ""center-right of the image"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to determine if the defect is present in other areas.""
+}
+```"
+case-015,I0,mvtec_ad,metal_nut,mvtec_ad/metal_nut/test/good/009.png,,no,no,yes,,The metal nut appears to have a circular hole in the center with a textured surface around it.,normal,,center of the nut,,,"```json
+{
+  ""visual_evidence"": ""The metal nut appears to have a circular hole in the center with a textured surface around it."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": ""center of the nut"",
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-015,D0,mvtec_ad,metal_nut,mvtec_ad/metal_nut/test/good/009.png,normal,no,no,yes,,The metal nut appears to have a textured surface with a central hole.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The metal nut appears to have a textured surface with a central hole."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-015,D1,mvtec_ad,metal_nut,mvtec_ad/metal_nut/test/good/009.png,normal,no,yes,yes,,The metal nut appears to have a central hole with a textured surface around it.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The metal nut appears to have a central hole with a textured surface around it."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-016,I0,mvtec_ad,metal_nut,mvtec_ad/metal_nut/test/bent/018.png,,no,no,yes,,The metal nut appears to have a missing or damaged section on one of its sides.,anomalous,missing section,one side of the nut,moderate,Further inspection to determine the extent of the damage and potential impact on functionality.,"```json
+{
+  ""visual_evidence"": ""The metal nut appears to have a missing or damaged section on one of its sides."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""missing section"",
+  ""location"": ""one side of the nut"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to determine the extent of the damage and potential impact on functionality.""
+}
+```"
+case-016,D0,mvtec_ad,metal_nut,mvtec_ad/metal_nut/test/bent/018.png,anomalous,yes,no,yes,,"The metal nut appears to have a dark, possibly damaged area near the top left corner.",anomalous,dark spot,top left corner,limited,Further inspection with a magnifying glass to determine the extent of the damage.,"```json
+{
+  ""visual_evidence"": ""The metal nut appears to have a dark, possibly damaged area near the top left corner."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""dark spot"",
+  ""location"": ""top left corner"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection with a magnifying glass to determine the extent of the damage.""
+}
+```"
+case-016,D1,mvtec_ad,metal_nut,mvtec_ad/metal_nut/test/bent/018.png,anomalous,yes,yes,yes,,"The metal nut appears to have a dark, possibly damaged area near the top left corner.",anomalous,dark spot,top left corner,limited,Further inspection to determine the cause and extent of the damage.,"```json
+{
+  ""visual_evidence"": ""The metal nut appears to have a dark, possibly damaged area near the top left corner."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""dark spot"",
+  ""location"": ""top left corner"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to determine the cause and extent of the damage.""
+}
+```"
+case-017,I0,mvtec_ad,pill,mvtec_ad/pill/test/good/003.png,,no,no,yes,,The pill has a white color with some red specks and the letter 'F' embossed on it.,normal,none,center of the pill,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The pill has a white color with some red specks and the letter 'F' embossed on it."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""none"",
+  ""location"": ""center of the pill"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-017,D0,mvtec_ad,pill,mvtec_ad/pill/test/good/003.png,normal,no,no,yes,,The pill has a white color with some red specks and the letter 'F' embossed on it.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The pill has a white color with some red specks and the letter 'F' embossed on it."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-017,D1,mvtec_ad,pill,mvtec_ad/pill/test/good/003.png,normal,no,yes,yes,,The pill has a white color with some red specks and a clear imprint of the letter 'F'.,normal,contamination,red specks on the pill,limited,No specific action required.,"```json
+{
+  ""visual_evidence"": ""The pill has a white color with some red specks and a clear imprint of the letter 'F'."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""contamination"",
+  ""location"": ""red specks on the pill"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No specific action required.""
+}
+```"
+case-018,I0,mvtec_ad,pill,mvtec_ad/pill/test/crack/002.png,,no,no,yes,,The pill has a white surface with some red specks and a visible embossed 'F-F' symbol.,normal,red specks,surface,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The pill has a white surface with some red specks and a visible embossed 'F-F' symbol."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""red specks"",
+  ""location"": ""surface"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-018,D0,mvtec_ad,pill,mvtec_ad/pill/test/crack/002.png,anomalous,yes,no,yes,,The pill has a white surface with some red specks and a cross symbol.,normal,red specks,surface,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The pill has a white surface with some red specks and a cross symbol."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""red specks"",
+  ""location"": ""surface"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-018,D1,mvtec_ad,pill,mvtec_ad/pill/test/crack/002.png,anomalous,yes,yes,yes,,The pill has a white surface with some red specks and a cross imprint.,normal,contamination,red specks on the pill surface,limited,Inspect the pill for any other visible defects.,"```json
+{
+  ""visual_evidence"": ""The pill has a white surface with some red specks and a cross imprint."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""contamination"",
+  ""location"": ""red specks on the pill surface"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Inspect the pill for any other visible defects.""
+}
+```"
+case-019,I0,mvtec_ad,screw,mvtec_ad/screw/test/good/036.png,,no,no,yes,,The screw has a slightly worn tip and a visible scratch on its body.,normal,worn tip and scratch,tip and body,limited,Inspect the screw for functionality and safety before use.,"```json
+{
+  ""visual_evidence"": ""The screw has a slightly worn tip and a visible scratch on its body."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""worn tip and scratch"",
+  ""location"": ""tip and body"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Inspect the screw for functionality and safety before use.""
+}
+```"
+case-019,D0,mvtec_ad,screw,mvtec_ad/screw/test/good/036.png,normal,no,no,yes,,The screw has a slightly worn tip and a visible scratch on the body.,normal,wear and scratch,tip and body,limited,Inspect the screw for functionality and safety before use.,"```json
+{
+  ""visual_evidence"": ""The screw has a slightly worn tip and a visible scratch on the body."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""wear and scratch"",
+  ""location"": ""tip and body"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Inspect the screw for functionality and safety before use.""
+}
+```"
+case-019,D1,mvtec_ad,screw,mvtec_ad/screw/test/good/036.png,normal,no,yes,yes,,The screw has a slightly worn tip and a visible scratch on its neck.,normal,scratch neck,neck,limited,Inspect the screw for functionality and safety before use.,"```json
+{
+  ""visual_evidence"": ""The screw has a slightly worn tip and a visible scratch on its neck."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""scratch neck"",
+  ""location"": ""neck"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Inspect the screw for functionality and safety before use.""
+}
+```"
+case-020,I0,mvtec_ad,screw,mvtec_ad/screw/test/thread_side/019.png,,no,no,yes,,The screw has a slightly worn appearance with visible signs of rust or corrosion.,normal,rust or corrosion,entire length of the screw,limited,Inspect the screw for further damage or rust growth.,"```json
+{
+  ""visual_evidence"": ""The screw has a slightly worn appearance with visible signs of rust or corrosion."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""rust or corrosion"",
+  ""location"": ""entire length of the screw"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Inspect the screw for further damage or rust growth.""
+}
+```"
+case-020,D0,mvtec_ad,screw,mvtec_ad/screw/test/thread_side/019.png,anomalous,yes,no,yes,,The screw appears to be in good condition with no visible signs of damage or wear.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The screw appears to be in good condition with no visible signs of damage or wear."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-020,D1,mvtec_ad,screw,mvtec_ad/screw/test/thread_side/019.png,anomalous,yes,yes,yes,,The screw appears to be in good condition with no visible signs of damage or wear.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The screw appears to be in good condition with no visible signs of damage or wear."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-021,I0,mvtec_ad,tile,mvtec_ad/tile/test/good/027.png,,no,no,yes,,The image shows a speckled pattern with some areas darker than others.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The image shows a speckled pattern with some areas darker than others."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-021,D0,mvtec_ad,tile,mvtec_ad/tile/test/good/027.png,normal,no,no,yes,,The image shows a speckled pattern with dark and light patches.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The image shows a speckled pattern with dark and light patches."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-021,D1,mvtec_ad,tile,mvtec_ad/tile/test/good/027.png,normal,no,yes,yes,,The image shows a random texture with no uniform repetition.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The image shows a random texture with no uniform repetition."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-022,I0,mvtec_ad,tile,mvtec_ad/tile/test/rough/009.png,,no,no,yes,,The image shows a speckled pattern with some areas appearing brighter and others darker.,normal,speckled pattern,entire tile,limited,No specific action required.,"```json
+{
+  ""visual_evidence"": ""The image shows a speckled pattern with some areas appearing brighter and others darker."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""speckled pattern"",
+  ""location"": ""entire tile"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No specific action required.""
+}
+```"
+case-022,D0,mvtec_ad,tile,mvtec_ad/tile/test/rough/009.png,anomalous,yes,no,yes,,The image shows a speckled pattern with some areas appearing brighter and others darker.,uncertain,speckled pattern,entire image,limited,Further inspection with a higher magnification or different lighting conditions.,"```json
+{
+  ""visual_evidence"": ""The image shows a speckled pattern with some areas appearing brighter and others darker."",
+  ""inspection_status"": ""uncertain"",
+  ""defect_type"": ""speckled pattern"",
+  ""location"": ""entire image"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection with a higher magnification or different lighting conditions.""
+}
+```"
+case-022,D1,mvtec_ad,tile,mvtec_ad/tile/test/rough/009.png,anomalous,yes,yes,yes,,The image shows a speckled pattern with some areas appearing brighter and others darker.,uncertain,null,center and bottom of the image,limited,Conduct a closer inspection of the center and bottom areas.,"```json
+{
+  ""visual_evidence"": ""The image shows a speckled pattern with some areas appearing brighter and others darker."",
+  ""inspection_status"": ""uncertain"",
+  ""defect_type"": ""null"",
+  ""location"": ""center and bottom of the image"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Conduct a closer inspection of the center and bottom areas.""
+}
+```"
+case-023,I0,mvtec_ad,toothbrush,mvtec_ad/toothbrush/test/good/003.png,,no,no,yes,,"The toothbrush has a pattern of blue and white bristles, with some bristles missing or damaged.",anomalous,missing or damaged bristles,brush head,moderate,Inspect the entire toothbrush for any additional defects.,"```json
+{
+  ""visual_evidence"": ""The toothbrush has a pattern of blue and white bristles, with some bristles missing or damaged."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""missing or damaged bristles"",
+  ""location"": ""brush head"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Inspect the entire toothbrush for any additional defects.""
+}
+```"
+case-023,D0,mvtec_ad,toothbrush,mvtec_ad/toothbrush/test/good/003.png,normal,no,no,yes,,The toothbrush has a white handle with blue and white bristles.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The toothbrush has a white handle with blue and white bristles."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-023,D1,mvtec_ad,toothbrush,mvtec_ad/toothbrush/test/good/003.png,normal,no,yes,yes,,The toothbrush has a white handle with blue and white bristles.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The toothbrush has a white handle with blue and white bristles."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-024,I0,mvtec_ad,toothbrush,mvtec_ad/toothbrush/test/defective/009.png,,no,no,yes,,The toothbrush bristles are discolored and appear to be damaged.,anomalous,discolored and damaged bristles,entire toothbrush,extensive,Further inspection to determine the extent of damage and potential safety concerns.,"```json
+{
+  ""visual_evidence"": ""The toothbrush bristles are discolored and appear to be damaged."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""discolored and damaged bristles"",
+  ""location"": ""entire toothbrush"",
+  ""severity_estimate"": ""extensive"",
+  ""recommended_action"": ""Further inspection to determine the extent of damage and potential safety concerns.""
+}
+```"
+case-024,D0,mvtec_ad,toothbrush,mvtec_ad/toothbrush/test/defective/009.png,anomalous,yes,no,yes,,The toothbrush bristles appear to be discolored and possibly damaged.,anomalous,discolored bristles,bristles,moderate,Further inspection to determine the extent of damage and potential need for replacement.,"```json
+{
+  ""visual_evidence"": ""The toothbrush bristles appear to be discolored and possibly damaged."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""discolored bristles"",
+  ""location"": ""bristles"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to determine the extent of damage and potential need for replacement.""
+}
+```"
+case-024,D1,mvtec_ad,toothbrush,mvtec_ad/toothbrush/test/defective/009.png,anomalous,yes,yes,yes,,The toothbrush has a pattern of blue and white bristles arranged in a grid-like fashion.,normal,defective,brush head,moderate,Further inspection to identify the exact cause of the defect.,"```json
+{
+  ""visual_evidence"": ""The toothbrush has a pattern of blue and white bristles arranged in a grid-like fashion."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""defective"",
+  ""location"": ""brush head"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to identify the exact cause of the defect.""
+}
+```"
+case-025,I0,mvtec_ad,transistor,mvtec_ad/transistor/test/good/006.png,,no,no,yes,,The transistor appears to be in good condition with no visible signs of damage or wear.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The transistor appears to be in good condition with no visible signs of damage or wear."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-025,D0,mvtec_ad,transistor,mvtec_ad/transistor/test/good/006.png,normal,no,no,yes,,The transistor appears to be in good condition with no visible signs of damage or wear.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The transistor appears to be in good condition with no visible signs of damage or wear."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-025,D1,mvtec_ad,transistor,mvtec_ad/transistor/test/good/006.png,normal,no,yes,yes,,The transistor has a bent lead on the right side.,normal,bent lead,right side of the transistor,limited,Inspect the transistor for functionality and safety.,"```json
+{
+  ""visual_evidence"": ""The transistor has a bent lead on the right side."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""bent lead"",
+  ""location"": ""right side of the transistor"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Inspect the transistor for functionality and safety.""
+}
+```"
+case-026,I0,mvtec_ad,transistor,mvtec_ad/transistor/test/bent_lead/004.png,,no,no,yes,,"The transistor has a slightly bent lead, which is visible in the original image.",normal,bent lead,lead of the transistor,limited,Inspect the transistor for functionality and safety after the lead is bent.,"```json
+{
+  ""visual_evidence"": ""The transistor has a slightly bent lead, which is visible in the original image."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""bent lead"",
+  ""location"": ""lead of the transistor"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Inspect the transistor for functionality and safety after the lead is bent.""
+}
+```"
+case-026,D0,mvtec_ad,transistor,mvtec_ad/transistor/test/bent_lead/004.png,anomalous,yes,no,yes,,"The transistor appears to have a slightly bent lead, which is a common issue.",normal,bent lead,leads,limited,Inspect the transistor for functionality and safety before use.,"```json
+{
+  ""visual_evidence"": ""The transistor appears to have a slightly bent lead, which is a common issue."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""bent lead"",
+  ""location"": ""leads"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Inspect the transistor for functionality and safety before use.""
+}
+```"
+case-026,D1,mvtec_ad,transistor,mvtec_ad/transistor/test/bent_lead/004.png,anomalous,yes,yes,yes,,"The transistor has bent leads, which is a visible defect.",anomalous,bent lead,leads of the transistor,moderate,Inspect the transistor for functionality and safety after replacing the bent leads.,"```json
+{
+  ""visual_evidence"": ""The transistor has bent leads, which is a visible defect."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""bent lead"",
+  ""location"": ""leads of the transistor"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Inspect the transistor for functionality and safety after replacing the bent leads.""
+}
+```"
+case-027,I0,mvtec_ad,wood,mvtec_ad/wood/test/good/012.png,,no,no,yes,,"The wood has a consistent, straight grain pattern with minor variations in color and texture.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The wood has a consistent, straight grain pattern with minor variations in color and texture."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-027,D0,mvtec_ad,wood,mvtec_ad/wood/test/good/012.png,normal,no,no,yes,,The image shows a close-up of a wood surface with a consistent grain pattern.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The image shows a close-up of a wood surface with a consistent grain pattern."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-027,D1,mvtec_ad,wood,mvtec_ad/wood/test/good/012.png,normal,no,yes,yes,,"The image shows a uniform, vertical striped pattern with no visible defects.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The image shows a uniform, vertical striped pattern with no visible defects."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-028,I0,mvtec_ad,wood,mvtec_ad/wood/test/liquid/001.png,,no,no,yes,,There is a visible dark stain or discoloration on the wood.,anomalous,dark stain or discoloration,center of the image,moderate,Conduct a closer inspection to determine the cause and extent of the discoloration.,"```json
+{
+  ""visual_evidence"": ""There is a visible dark stain or discoloration on the wood."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""dark stain or discoloration"",
+  ""location"": ""center of the image"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Conduct a closer inspection to determine the cause and extent of the discoloration.""
+}
+```"
+case-028,D0,mvtec_ad,wood,mvtec_ad/wood/test/liquid/001.png,anomalous,yes,no,yes,,There is a visible dark line running horizontally across the wood.,anomalous,horizontal dark line,center of the image,moderate,Further inspection to determine the cause and extent of the defect.,"```json
+{
+  ""visual_evidence"": ""There is a visible dark line running horizontally across the wood."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""horizontal dark line"",
+  ""location"": ""center of the image"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to determine the cause and extent of the defect.""
+}
+```"
+case-028,D1,mvtec_ad,wood,mvtec_ad/wood/test/liquid/001.png,anomalous,yes,yes,yes,,"There is a dark, linear mark running horizontally across the wood.",anomalous,scratch,horizontal across the wood,moderate,Conduct a closer inspection to determine the cause and extent of the scratch.,"```json
+{
+  ""visual_evidence"": ""There is a dark, linear mark running horizontally across the wood."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""scratch"",
+  ""location"": ""horizontal across the wood"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Conduct a closer inspection to determine the cause and extent of the scratch.""
+}
+```"
+case-029,I0,mvtec_ad,zipper,mvtec_ad/zipper/test/good/019.png,,no,no,yes,,The zipper teeth are aligned and there are no visible gaps or misalignment.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The zipper teeth are aligned and there are no visible gaps or misalignment."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-029,D0,mvtec_ad,zipper,mvtec_ad/zipper/test/good/019.png,normal,no,no,yes,,The zipper teeth are aligned and there are no visible gaps or misalignment.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The zipper teeth are aligned and there are no visible gaps or misalignment."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-029,D1,mvtec_ad,zipper,mvtec_ad/zipper/test/good/019.png,normal,no,yes,yes,,The zipper teeth are aligned and the fabric appears smooth.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The zipper teeth are aligned and the fabric appears smooth."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-030,I0,mvtec_ad,zipper,mvtec_ad/zipper/test/broken_teeth/012.png,,no,no,yes,,"The zipper has a small, visible gap or tear in the fabric.",anomalous,tear or gap in fabric,center of the zipper,limited,Close the zipper and inspect for further damage.,"```json
+{
+  ""visual_evidence"": ""The zipper has a small, visible gap or tear in the fabric."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""tear or gap in fabric"",
+  ""location"": ""center of the zipper"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Close the zipper and inspect for further damage.""
+}
+```"
+case-030,D0,mvtec_ad,zipper,mvtec_ad/zipper/test/broken_teeth/012.png,anomalous,yes,no,yes,,"A small, dark spot is visible on the zipper, which appears to be a defect.",anomalous,small dark spot,middle of the zipper,limited,Inspect the entire zipper for any other defects.,"```json
+{
+  ""visual_evidence"": ""A small, dark spot is visible on the zipper, which appears to be a defect."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""small dark spot"",
+  ""location"": ""middle of the zipper"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Inspect the entire zipper for any other defects.""
+}
+```"
+case-030,D1,mvtec_ad,zipper,mvtec_ad/zipper/test/broken_teeth/012.png,anomalous,yes,yes,yes,,"The zipper has a small, visible gap or tear in the fabric near the teeth.",anomalous,tear or gap in fabric,near the teeth of the zipper,moderate,Inspect the zipper for additional damage and consider replacing the damaged section.,"```json
+{
+  ""visual_evidence"": ""The zipper has a small, visible gap or tear in the fabric near the teeth."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""tear or gap in fabric"",
+  ""location"": ""near the teeth of the zipper"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Inspect the zipper for additional damage and consider replacing the damaged section.""
+}
+```"
+case-031,I0,visa,candle,visa/candle/Data/Images/Normal/0520.JPG,,no,no,yes,,"The candle has a small, visible hole in the center of each disc.",normal,hole in the center,center of each candle disc,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The candle has a small, visible hole in the center of each disc."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""hole in the center"",
+  ""location"": ""center of each candle disc"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-031,D0,visa,candle,visa/candle/Data/Images/Normal/0520.JPG,normal,no,no,yes,,The image shows four circular objects with a small protrusion in the center.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The image shows four circular objects with a small protrusion in the center."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-031,D1,visa,candle,visa/candle/Data/Images/Normal/0520.JPG,normal,no,yes,yes,,The candle wicks are visible and appear to be intact.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The candle wicks are visible and appear to be intact."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-032,I0,visa,candle,visa/candle/Data/Images/Anomaly/057.JPG,,no,no,yes,,"The candle has a small, visible hole in the center of each disc.",normal,hole,center of each disc,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The candle has a small, visible hole in the center of each disc."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""hole"",
+  ""location"": ""center of each disc"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-032,D0,visa,candle,visa/candle/Data/Images/Anomaly/057.JPG,normal,no,no,yes,,The image shows four circular objects with a small indentation in the center.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The image shows four circular objects with a small indentation in the center."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-032,D1,visa,candle,visa/candle/Data/Images/Anomaly/057.JPG,normal,no,yes,yes,,"The candle has a smooth, uniform appearance with no visible defects.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The candle has a smooth, uniform appearance with no visible defects."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-033,I0,visa,capsules,visa/capsules/Data/Images/Normal/214.JPG,,no,no,yes,,"The capsules exhibit a gradient of green coloration, with some appearing more vibrant than others.",normal,color variation,entire surface of the capsules,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The capsules exhibit a gradient of green coloration, with some appearing more vibrant than others."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""color variation"",
+  ""location"": ""entire surface of the capsules"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-033,D0,visa,capsules,visa/capsules/Data/Images/Normal/214.JPG,normal,no,no,yes,,"The capsules exhibit a gradient of green coloration, with some appearing more vibrant than others.",normal,color variation,capsules,limited,Conduct a closer inspection to identify any other potential defects.,"```json
+{
+  ""visual_evidence"": ""The capsules exhibit a gradient of green coloration, with some appearing more vibrant than others."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""color variation"",
+  ""location"": ""capsules"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Conduct a closer inspection to identify any other potential defects.""
+}
+```"
+case-033,D1,visa,capsules,visa/capsules/Data/Images/Normal/214.JPG,normal,no,yes,yes,,The capsules are uniformly green with a slight variation in color intensity.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The capsules are uniformly green with a slight variation in color intensity."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-034,I0,visa,capsules,visa/capsules/Data/Images/Anomaly/080.JPG,,no,no,yes,,"The capsules have a glossy, green appearance with some variations in color intensity.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The capsules have a glossy, green appearance with some variations in color intensity."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-034,D0,visa,capsules,visa/capsules/Data/Images/Anomaly/080.JPG,anomalous,yes,no,yes,,The capsules appear to have a uniform green color with some variation in the intensity of the green hue.,normal,none,none,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The capsules appear to have a uniform green color with some variation in the intensity of the green hue."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""none"",
+  ""location"": ""none"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-034,D1,visa,capsules,visa/capsules/Data/Images/Anomaly/080.JPG,anomalous,yes,yes,yes,,The capsules are green and appear to be in good condition with no visible defects.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The capsules are green and appear to be in good condition with no visible defects."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-035,I0,visa,cashew,visa/cashew/Data/Images/Normal/435.JPG,,no,no,yes,,The cashew appears to be intact with no visible signs of damage or discoloration.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The cashew appears to be intact with no visible signs of damage or discoloration."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-035,D0,visa,cashew,visa/cashew/Data/Images/Normal/435.JPG,normal,no,no,yes,,The cashew appears to be intact with no visible signs of damage or discoloration.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The cashew appears to be intact with no visible signs of damage or discoloration."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-035,D1,visa,cashew,visa/cashew/Data/Images/Normal/435.JPG,normal,no,yes,yes,,The cashew appears to be intact with no visible signs of damage or discoloration.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The cashew appears to be intact with no visible signs of damage or discoloration."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-036,I0,visa,cashew,visa/cashew/Data/Images/Anomaly/026.JPG,,no,no,yes,,The cashew has a small black spot on its surface.,normal,black spot,center of the cashew,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The cashew has a small black spot on its surface."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""black spot"",
+  ""location"": ""center of the cashew"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-036,D0,visa,cashew,visa/cashew/Data/Images/Anomaly/026.JPG,anomalous,yes,no,yes,,The cashew has a small black spot on its surface.,anomalous,black spot,center of the cashew,limited,Inspect the cashew for any other defects or damage.,"```json
+{
+  ""visual_evidence"": ""The cashew has a small black spot on its surface."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""black spot"",
+  ""location"": ""center of the cashew"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Inspect the cashew for any other defects or damage.""
+}
+```"
+case-036,D1,visa,cashew,visa/cashew/Data/Images/Anomaly/026.JPG,anomalous,yes,yes,yes,,The cashew has a small black spot on its surface.,anomalous,small black spot,center of the cashew,limited,Further inspection to determine if the black spot is a defect or an anomaly.,"```json
+{
+  ""visual_evidence"": ""The cashew has a small black spot on its surface."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""small black spot"",
+  ""location"": ""center of the cashew"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to determine if the black spot is a defect or an anomaly.""
+}
+```"
+case-037,I0,visa,chewinggum,visa/chewinggum/Data/Images/Normal/392.JPG,,no,no,yes,,The chewing gum appears to be a standard rectangular shape with a smooth surface.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The chewing gum appears to be a standard rectangular shape with a smooth surface."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-037,D0,visa,chewinggum,visa/chewinggum/Data/Images/Normal/392.JPG,normal,no,no,yes,,"The object appears to be a rectangular, white, cylindrical item placed on a textured black surface.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The object appears to be a rectangular, white, cylindrical item placed on a textured black surface."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-037,D1,visa,chewinggum,visa/chewinggum/Data/Images/Normal/392.JPG,normal,no,yes,yes,,"The chewing gum appears to be a single, intact piece with no visible cracks, scratches, or missing parts.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The chewing gum appears to be a single, intact piece with no visible cracks, scratches, or missing parts."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-038,I0,visa,chewinggum,visa/chewinggum/Data/Images/Anomaly/062.JPG,,no,no,yes,,"The object appears to be a rectangular piece of white material with a small, indented area in the center.",normal,indented area,center of the object,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The object appears to be a rectangular piece of white material with a small, indented area in the center."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""indented area"",
+  ""location"": ""center of the object"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-038,D0,visa,chewinggum,visa/chewinggum/Data/Images/Anomaly/062.JPG,anomalous,yes,no,yes,,"The image shows a white rectangular object with a small, indented area on its surface.",normal,indented area,center of the object,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The image shows a white rectangular object with a small, indented area on its surface."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""indented area"",
+  ""location"": ""center of the object"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-038,D1,visa,chewinggum,visa/chewinggum/Data/Images/Anomaly/062.JPG,anomalous,yes,yes,yes,,"The image shows a white rectangular object with a small, indistinct mark on its surface.",anomalous,small indistinct mark,center of the object,limited,Further inspection to determine the nature and cause of the mark.,"```json
+{
+  ""visual_evidence"": ""The image shows a white rectangular object with a small, indistinct mark on its surface."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""small indistinct mark"",
+  ""location"": ""center of the object"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to determine the nature and cause of the mark.""
+}
+```"
+case-039,I0,visa,fryum,visa/fryum/Data/Images/Normal/342.JPG,,no,no,yes,,"The object appears to be a small, circular, beige-colored item with a star-like pattern and a central hole.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The object appears to be a small, circular, beige-colored item with a star-like pattern and a central hole."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-039,D0,visa,fryum,visa/fryum/Data/Images/Normal/342.JPG,normal,no,no,yes,,"The object appears to be a small, circular, beige-colored item with a star-like pattern and a central hole, placed on a textured green surface.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The object appears to be a small, circular, beige-colored item with a star-like pattern and a central hole, placed on a textured green surface."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-039,D1,visa,fryum,visa/fryum/Data/Images/Normal/342.JPG,normal,no,no,yes,,"The object appears to be a small, circular, beige-colored item with a star-like pattern and a central hole, placed on a textured green surface.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The object appears to be a small, circular, beige-colored item with a star-like pattern and a central hole, placed on a textured green surface."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-040,I0,visa,fryum,visa/fryum/Data/Images/Anomaly/066.JPG,,no,no,yes,,"The object appears to be a transparent, circular piece with a star-like pattern in the center.",normal,none,center of the object,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The object appears to be a transparent, circular piece with a star-like pattern in the center."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""none"",
+  ""location"": ""center of the object"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-040,D0,visa,fryum,visa/fryum/Data/Images/Anomaly/066.JPG,anomalous,yes,no,yes,,"The object appears to be a small, circular, translucent piece with a central hole and four triangular cutouts.",normal,none,center of the image,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The object appears to be a small, circular, translucent piece with a central hole and four triangular cutouts."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""none"",
+  ""location"": ""center of the image"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-040,D1,visa,fryum,visa/fryum/Data/Images/Anomaly/066.JPG,anomalous,yes,no,yes,,"The object appears to be a small, circular, translucent piece with a central hole and four triangular cutouts.",normal,none,center of the image,limited,No action required.,"```json
+{
+  ""visual_evidence"": ""The object appears to be a small, circular, translucent piece with a central hole and four triangular cutouts."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""none"",
+  ""location"": ""center of the image"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""No action required.""
+}
+```"
+case-041,I0,visa,macaroni1,visa/macaroni1/Data/Images/Normal/0402.JPG,,no,no,yes,,"The macaroni pieces are missing a portion of their shape, appearing as incomplete arcs.",anomalous,missing portion of shape,all four macaroni pieces,moderate,Further inspection to determine if the missing portions affect functionality or safety.,"```json
+{
+  ""visual_evidence"": ""The macaroni pieces are missing a portion of their shape, appearing as incomplete arcs."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""missing portion of shape"",
+  ""location"": ""all four macaroni pieces"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to determine if the missing portions affect functionality or safety.""
+}
+```"
+case-041,D0,visa,macaroni1,visa/macaroni1/Data/Images/Normal/0402.JPG,normal,no,no,yes,,"The macaroni pieces are in a circular shape with a hole in the center, and they are placed on a green textured surface.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The macaroni pieces are in a circular shape with a hole in the center, and they are placed on a green textured surface."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-041,D1,visa,macaroni1,visa/macaroni1/Data/Images/Normal/0402.JPG,normal,no,no,yes,,"The macaroni pieces are in a circular shape with a hole in the center, and they are placed on a green textured surface.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The macaroni pieces are in a circular shape with a hole in the center, and they are placed on a green textured surface."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-042,I0,visa,macaroni1,visa/macaroni1/Data/Images/Anomaly/007.JPG,,no,no,yes,,"The macaroni pieces appear to be incomplete, with one piece missing a significant portion of its length.",anomalous,missing length,all four macaroni pieces,moderate,Further inspection to determine if the missing length affects the functionality or safety of the macaroni.,"```json
+{
+  ""visual_evidence"": ""The macaroni pieces appear to be incomplete, with one piece missing a significant portion of its length."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""missing length"",
+  ""location"": ""all four macaroni pieces"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to determine if the missing length affects the functionality or safety of the macaroni.""
+}
+```"
+case-042,D0,visa,macaroni1,visa/macaroni1/Data/Images/Anomaly/007.JPG,anomalous,yes,no,yes,,"The macaroni pieces appear to be slightly discolored, with a reddish hue on the bottom right corner of the bottom right piece.",anomalous,discoloration,bottom right corner of the bottom right piece,limited,Further inspection to determine the cause and extent of the discoloration.,"```json
+{
+  ""visual_evidence"": ""The macaroni pieces appear to be slightly discolored, with a reddish hue on the bottom right corner of the bottom right piece."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""discoloration"",
+  ""location"": ""bottom right corner of the bottom right piece"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to determine the cause and extent of the discoloration.""
+}
+```"
+case-042,D1,visa,macaroni1,visa/macaroni1/Data/Images/Anomaly/007.JPG,anomalous,yes,no,yes,,"The macaroni pieces appear to be slightly discolored, with a reddish hue on the bottom right corner of the bottom right piece.",anomalous,discoloration,bottom right corner of the bottom right piece,limited,Further inspection to determine the cause and extent of the discoloration.,"```json
+{
+  ""visual_evidence"": ""The macaroni pieces appear to be slightly discolored, with a reddish hue on the bottom right corner of the bottom right piece."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""discoloration"",
+  ""location"": ""bottom right corner of the bottom right piece"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to determine the cause and extent of the discoloration.""
+}
+```"
+case-043,I0,visa,macaroni2,visa/macaroni2/Data/Images/Normal/0739.JPG,,no,no,yes,,"The macaroni pieces are missing a portion of their shape, appearing as incomplete arcs.",anomalous,missing shape,all four macaroni pieces,moderate,Further inspection to determine if the missing shape affects functionality or safety.,"```json
+{
+  ""visual_evidence"": ""The macaroni pieces are missing a portion of their shape, appearing as incomplete arcs."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""missing shape"",
+  ""location"": ""all four macaroni pieces"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to determine if the missing shape affects functionality or safety.""
+}
+```"
+case-043,D0,visa,macaroni2,visa/macaroni2/Data/Images/Normal/0739.JPG,normal,no,no,yes,,The macaroni pieces are yellow and have a slightly irregular shape with some missing pieces.,normal,missing pieces,all macaroni pieces,limited,Continue inspection to ensure no other defects are present.,"```json
+{
+  ""visual_evidence"": ""The macaroni pieces are yellow and have a slightly irregular shape with some missing pieces."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""missing pieces"",
+  ""location"": ""all macaroni pieces"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Continue inspection to ensure no other defects are present.""
+}
+```"
+case-043,D1,visa,macaroni2,visa/macaroni2/Data/Images/Normal/0739.JPG,normal,no,yes,yes,,"The macaroni pieces are yellow and appear to be broken or damaged, with some pieces showing cracks and chips.",anomalous,breakage down the middle,center and top right,moderate,Reassess the product quality and consider replacing the damaged items.,"```json
+{
+  ""visual_evidence"": ""The macaroni pieces are yellow and appear to be broken or damaged, with some pieces showing cracks and chips."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""breakage down the middle"",
+  ""location"": ""center and top right"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Reassess the product quality and consider replacing the damaged items.""
+}
+```"
+case-044,I0,visa,macaroni2,visa/macaroni2/Data/Images/Anomaly/001.JPG,,no,no,yes,,"The macaroni pieces are missing parts, with one piece missing a significant portion on the left side and another piece missing a small section on the right side.",anomalous,missing parts,left and right sides of the macaroni pieces,moderate,Further inspection to determine if the missing parts affect the functionality or safety of the macaroni pieces.,"```json
+{
+  ""visual_evidence"": ""The macaroni pieces are missing parts, with one piece missing a significant portion on the left side and another piece missing a small section on the right side."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""missing parts"",
+  ""location"": ""left and right sides of the macaroni pieces"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to determine if the missing parts affect the functionality or safety of the macaroni pieces.""
+}
+```"
+case-044,D0,visa,macaroni2,visa/macaroni2/Data/Images/Anomaly/001.JPG,anomalous,yes,no,yes,,"The macaroni pieces appear to be broken, with some missing pieces and others showing signs of wear.",anomalous,broken,all macaroni pieces,moderate,Further inspection to determine the extent of damage and potential repair options.,"```json
+{
+  ""visual_evidence"": ""The macaroni pieces appear to be broken, with some missing pieces and others showing signs of wear."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""broken"",
+  ""location"": ""all macaroni pieces"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to determine the extent of damage and potential repair options.""
+}
+```"
+case-044,D1,visa,macaroni2,visa/macaroni2/Data/Images/Anomaly/001.JPG,anomalous,yes,yes,yes,,"The macaroni pieces are broken down the middle, with one piece missing a small section.",anomalous,breakage down the middle,middle of the macaroni pieces,moderate,Further inspection to determine if the pieces are suitable for use.,"```json
+{
+  ""visual_evidence"": ""The macaroni pieces are broken down the middle, with one piece missing a small section."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""breakage down the middle"",
+  ""location"": ""middle of the macaroni pieces"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to determine if the pieces are suitable for use.""
+}
+```"
+case-045,I0,visa,pcb1,visa/pcb1/Data/Images/Normal/0170.JPG,,no,no,yes,,The PCB has a blue color with two circular components and a rectangular component in the center.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The PCB has a blue color with two circular components and a rectangular component in the center."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-045,D0,visa,pcb1,visa/pcb1/Data/Images/Normal/0170.JPG,normal,no,no,yes,,The PCB has two circular components with mesh-like textures on the top surface.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The PCB has two circular components with mesh-like textures on the top surface."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-045,D1,visa,pcb1,visa/pcb1/Data/Images/Normal/0170.JPG,normal,no,no,yes,,The PCB has two circular components with mesh-like textures on the top surface.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The PCB has two circular components with mesh-like textures on the top surface."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-046,I0,visa,pcb1,visa/pcb1/Data/Images/Anomaly/095.JPG,,no,no,yes,,The PCB has a blue color with two circular components and some text printed on it.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The PCB has a blue color with two circular components and some text printed on it."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-046,D0,visa,pcb1,visa/pcb1/Data/Images/Anomaly/095.JPG,anomalous,yes,no,yes,,"The image shows a blue circuit board with two circular components, likely sensors, and some text and markings.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The image shows a blue circuit board with two circular components, likely sensors, and some text and markings."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-046,D1,visa,pcb1,visa/pcb1/Data/Images/Anomaly/095.JPG,anomalous,yes,no,yes,,"The image shows a blue circuit board with two circular components, likely sensors, and some text and markings.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The image shows a blue circuit board with two circular components, likely sensors, and some text and markings."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-047,I0,visa,pcb2,visa/pcb2/Data/Images/Normal/0619.JPG,,no,no,yes,,The PCB has a few small solder bridges and some missing components.,normal,missing components and solder bridges,missing components and solder bridges,limited,Inspect the missing components and solder bridges.,"```json
+{
+  ""visual_evidence"": ""The PCB has a few small solder bridges and some missing components."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""missing components and solder bridges"",
+  ""location"": ""missing components and solder bridges"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Inspect the missing components and solder bridges.""
+}
+```"
+case-047,D0,visa,pcb2,visa/pcb2/Data/Images/Normal/0619.JPG,normal,no,no,yes,,"The PCB has visible solder joints and components, but there are some small areas with missing solder or slight discoloration.",normal,missing solder or slight discoloration,various areas on the PCB,limited,Further inspection to identify the cause of the missing solder and take appropriate action to repair or replace the affected components.,"```json
+{
+  ""visual_evidence"": ""The PCB has visible solder joints and components, but there are some small areas with missing solder or slight discoloration."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""missing solder or slight discoloration"",
+  ""location"": ""various areas on the PCB"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to identify the cause of the missing solder and take appropriate action to repair or replace the affected components.""
+}
+```"
+case-047,D1,visa,pcb2,visa/pcb2/Data/Images/Normal/0619.JPG,normal,no,yes,yes,,"The PCB has visible solder joints and components, but there are some small areas with missing solder or components.",normal,missing components,specific areas on the PCB,moderate,Further inspection to identify and repair the missing components.,"```json
+{
+  ""visual_evidence"": ""The PCB has visible solder joints and components, but there are some small areas with missing solder or components."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""missing components"",
+  ""location"": ""specific areas on the PCB"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to identify and repair the missing components.""
+}
+```"
+case-048,I0,visa,pcb2,visa/pcb2/Data/Images/Anomaly/092.JPG,,no,no,yes,,"The PCB has a few small, visible solder bridges and some small, dark spots on the surface.",normal,solder bridges and surface imperfections,top left corner and center of the PCB,limited,Inspect the PCB for functionality and safety before use.,"```json
+{
+  ""visual_evidence"": ""The PCB has a few small, visible solder bridges and some small, dark spots on the surface."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""solder bridges and surface imperfections"",
+  ""location"": ""top left corner and center of the PCB"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Inspect the PCB for functionality and safety before use.""
+}
+```"
+case-048,D0,visa,pcb2,visa/pcb2/Data/Images/Anomaly/092.JPG,anomalous,yes,no,yes,,"The PCB shows signs of wear, with visible discoloration and potential damage to components.",anomalous,wear and discoloration,entire PCB,moderate,Further inspection to identify the extent of damage and potential repair options.,"```json
+{
+  ""visual_evidence"": ""The PCB shows signs of wear, with visible discoloration and potential damage to components."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""wear and discoloration"",
+  ""location"": ""entire PCB"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to identify the extent of damage and potential repair options.""
+}
+```"
+case-048,D1,visa,pcb2,visa/pcb2/Data/Images/Anomaly/092.JPG,anomalous,yes,yes,yes,,The PCB has some visible solder bridges and slight discoloration.,uncertain,solder bridges and discoloration,center and edges of the PCB,limited,Further inspection to determine if the PCB is operational and safe for use.,"```json
+{
+  ""visual_evidence"": ""The PCB has some visible solder bridges and slight discoloration."",
+  ""inspection_status"": ""uncertain"",
+  ""defect_type"": ""solder bridges and discoloration"",
+  ""location"": ""center and edges of the PCB"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to determine if the PCB is operational and safe for use.""
+}
+```"
+case-049,I0,visa,pcb3,visa/pcb3/Data/Images/Normal/0900.JPG,,no,no,yes,,"The PCB has a clear, well-defined shape with all components and markings visible.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The PCB has a clear, well-defined shape with all components and markings visible."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-049,D0,visa,pcb3,visa/pcb3/Data/Images/Normal/0900.JPG,normal,no,no,yes,,"The PCB has a clear label and components, but the LED light is not illuminated.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The PCB has a clear label and components, but the LED light is not illuminated."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-049,D1,visa,pcb3,visa/pcb3/Data/Images/Normal/0900.JPG,normal,no,yes,yes,,"The PCB has a clear label and components, but the specific details of the components are not clearly visible.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The PCB has a clear label and components, but the specific details of the components are not clearly visible."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-050,I0,visa,pcb3,visa/pcb3/Data/Images/Anomaly/082.JPG,,no,no,yes,,The PCB has a clear and visible LED light on the right side.,normal,,right side of the PCB,limited,,"```json
+{
+  ""visual_evidence"": ""The PCB has a clear and visible LED light on the right side."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": ""right side of the PCB"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": null
+}
+```"
+case-050,D0,visa,pcb3,visa/pcb3/Data/Images/Anomaly/082.JPG,anomalous,yes,no,yes,,"The PCB has a red dot on the right side, which might indicate a defect.",anomalous,red dot,right side of the PCB,limited,Further inspection to determine the cause of the red dot.,"```json
+{
+  ""visual_evidence"": ""The PCB has a red dot on the right side, which might indicate a defect."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""red dot"",
+  ""location"": ""right side of the PCB"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to determine the cause of the red dot.""
+}
+```"
+case-050,D1,visa,pcb3,visa/pcb3/Data/Images/Anomaly/082.JPG,anomalous,yes,yes,yes,,The PCB has a bent component on the right side.,anomalous,bent,right side of the PCB,limited,Inspect the PCB for any other defects and ensure all components are properly aligned.,"```json
+{
+  ""visual_evidence"": ""The PCB has a bent component on the right side."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""bent"",
+  ""location"": ""right side of the PCB"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Inspect the PCB for any other defects and ensure all components are properly aligned.""
+}
+```"
+case-051,I0,visa,pcb4,visa/pcb4/Data/Images/Normal/0011.JPG,,no,no,yes,,The PCB has a blue surface with various components and markings.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The PCB has a blue surface with various components and markings."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-051,D0,visa,pcb4,visa/pcb4/Data/Images/Normal/0011.JPG,normal,no,no,yes,,The PCB has a blue surface with various components and markings.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The PCB has a blue surface with various components and markings."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-051,D1,visa,pcb4,visa/pcb4/Data/Images/Normal/0011.JPG,normal,no,yes,yes,,The PCB has a blue surface with various components and markings.,normal,,,,,"```json
+{
+  ""visual_evidence"": ""The PCB has a blue surface with various components and markings."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-052,I0,visa,pcb4,visa/pcb4/Data/Images/Anomaly/080.JPG,,no,no,yes,,"The PCB has some dirt and wear on the surface, particularly around the USB port and the battery terminals.",normal,dirt and wear,USB port and battery terminals,limited,Clean the PCB to remove dirt and wear.,"```json
+{
+  ""visual_evidence"": ""The PCB has some dirt and wear on the surface, particularly around the USB port and the battery terminals."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": ""dirt and wear"",
+  ""location"": ""USB port and battery terminals"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Clean the PCB to remove dirt and wear.""
+}
+```"
+case-052,D0,visa,pcb4,visa/pcb4/Data/Images/Anomaly/080.JPG,anomalous,yes,no,yes,,"The PCB has some visible rust and discoloration, particularly around the USB port and the battery terminals.",anomalous,rust and discoloration,USB port and battery terminals,moderate,Further inspection to determine if the rust and discoloration affect functionality and safety.,"```json
+{
+  ""visual_evidence"": ""The PCB has some visible rust and discoloration, particularly around the USB port and the battery terminals."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""rust and discoloration"",
+  ""location"": ""USB port and battery terminals"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to determine if the rust and discoloration affect functionality and safety.""
+}
+```"
+case-052,D1,visa,pcb4,visa/pcb4/Data/Images/Anomaly/080.JPG,anomalous,yes,yes,yes,,"The PCB has some visible rust and discoloration, particularly around the USB port and the battery terminals.",anomalous,rust and discoloration,USB port and battery terminals,moderate,Further inspection to determine the extent of the damage and potential impact on functionality and safety.,"```json
+{
+  ""visual_evidence"": ""The PCB has some visible rust and discoloration, particularly around the USB port and the battery terminals."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""rust and discoloration"",
+  ""location"": ""USB port and battery terminals"",
+  ""severity_estimate"": ""moderate"",
+  ""recommended_action"": ""Further inspection to determine the extent of the damage and potential impact on functionality and safety.""
+}
+```"
+case-053,I0,visa,pipe_fryum,visa/pipe_fryum/Data/Images/Normal/369.JPG,,no,no,yes,,"The pipe fryum appears to be a rectangular piece of material with a smooth, slightly textured surface.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The pipe fryum appears to be a rectangular piece of material with a smooth, slightly textured surface."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-053,D0,visa,pipe_fryum,visa/pipe_fryum/Data/Images/Normal/369.JPG,normal,no,no,yes,,"The pipe fryum appears to be a rectangular, beige-colored object with a textured surface.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The pipe fryum appears to be a rectangular, beige-colored object with a textured surface."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-053,D1,visa,pipe_fryum,visa/pipe_fryum/Data/Images/Normal/369.JPG,normal,no,yes,yes,,"The pipe fryum appears to be a rectangular, beige-colored object with a smooth surface.",normal,,,,,"```json
+{
+  ""visual_evidence"": ""The pipe fryum appears to be a rectangular, beige-colored object with a smooth surface."",
+  ""inspection_status"": ""normal"",
+  ""defect_type"": null,
+  ""location"": null,
+  ""severity_estimate"": null,
+  ""recommended_action"": null
+}
+```"
+case-054,I0,visa,pipe_fryum,visa/pipe_fryum/Data/Images/Anomaly/042.JPG,,no,no,yes,,The pipe fryum has a small hole in its surface.,anomalous,hole,center,limited,Further inspection to determine the cause and extent of the hole.,"```json
+{
+  ""visual_evidence"": ""The pipe fryum has a small hole in its surface."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""hole"",
+  ""location"": ""center"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to determine the cause and extent of the hole.""
+}
+```"
+case-054,D0,visa,pipe_fryum,visa/pipe_fryum/Data/Images/Anomaly/042.JPG,anomalous,yes,no,yes,,The image shows a rectangular piece of material with a small hole in the center.,anomalous,hole,center of the rectangular piece,limited,Further inspection to determine the cause and extent of the damage.,"```json
+{
+  ""visual_evidence"": ""The image shows a rectangular piece of material with a small hole in the center."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""hole"",
+  ""location"": ""center of the rectangular piece"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to determine the cause and extent of the damage.""
+}
+```"
+case-054,D1,visa,pipe_fryum,visa/pipe_fryum/Data/Images/Anomaly/042.JPG,anomalous,yes,yes,yes,,The pipe fryum has a small hole in its center.,anomalous,small hole,center,limited,Further inspection to determine the cause and extent of the damage.,"```json
+{
+  ""visual_evidence"": ""The pipe fryum has a small hole in its center."",
+  ""inspection_status"": ""anomalous"",
+  ""defect_type"": ""small hole"",
+  ""location"": ""center"",
+  ""severity_estimate"": ""limited"",
+  ""recommended_action"": ""Further inspection to determine the cause and extent of the damage.""
+}
+```"

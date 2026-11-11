@@ -1,0 +1,28 @@
+dataset,category,query,retrieved_card,similarity,used_in_d1
+mvtec_ad,bottle,Industrial visual inspection of mvtec_ad bottle: normal appearance and defect terminology.,mvtec_ad/bottle,0.9210,yes
+mvtec_ad,cable,Industrial visual inspection of mvtec_ad cable: normal appearance and defect terminology.,mvtec_ad/cable,0.9086,yes
+mvtec_ad,capsule,Industrial visual inspection of mvtec_ad capsule: normal appearance and defect terminology.,mvtec_ad/capsule,0.9109,yes
+mvtec_ad,carpet,Industrial visual inspection of mvtec_ad carpet: normal appearance and defect terminology.,mvtec_ad/carpet,0.9193,yes
+mvtec_ad,grid,Industrial visual inspection of mvtec_ad grid: normal appearance and defect terminology.,mvtec_ad/grid,0.9099,yes
+mvtec_ad,hazelnut,Industrial visual inspection of mvtec_ad hazelnut: normal appearance and defect terminology.,mvtec_ad/hazelnut,0.9061,yes
+mvtec_ad,leather,Industrial visual inspection of mvtec_ad leather: normal appearance and defect terminology.,mvtec_ad/leather,0.9127,yes
+mvtec_ad,metal_nut,Industrial visual inspection of mvtec_ad metal nut: normal appearance and defect terminology.,mvtec_ad/metal_nut,0.9011,yes
+mvtec_ad,pill,Industrial visual inspection of mvtec_ad pill: normal appearance and defect terminology.,mvtec_ad/pill,0.9298,yes
+mvtec_ad,screw,Industrial visual inspection of mvtec_ad screw: normal appearance and defect terminology.,mvtec_ad/screw,0.9043,yes
+mvtec_ad,tile,Industrial visual inspection of mvtec_ad tile: normal appearance and defect terminology.,mvtec_ad/tile,0.9132,yes
+mvtec_ad,toothbrush,Industrial visual inspection of mvtec_ad toothbrush: normal appearance and defect terminology.,mvtec_ad/toothbrush,0.9167,yes
+mvtec_ad,transistor,Industrial visual inspection of mvtec_ad transistor: normal appearance and defect terminology.,mvtec_ad/transistor,0.8979,yes
+mvtec_ad,wood,Industrial visual inspection of mvtec_ad wood: normal appearance and defect terminology.,mvtec_ad/wood,0.9103,yes
+mvtec_ad,zipper,Industrial visual inspection of mvtec_ad zipper: normal appearance and defect terminology.,mvtec_ad/zipper,0.9130,yes
+visa,candle,Industrial visual inspection of visa candle: normal appearance and defect terminology.,visa/candle,0.9176,yes
+visa,capsules,Industrial visual inspection of visa capsules: normal appearance and defect terminology.,visa/capsules,0.9039,yes
+visa,cashew,Industrial visual inspection of visa cashew: normal appearance and defect terminology.,visa/cashew,0.9128,yes
+visa,chewinggum,Industrial visual inspection of visa chewinggum: normal appearance and defect terminology.,visa/chewinggum,0.9084,yes
+visa,fryum,Industrial visual inspection of visa fryum: normal appearance and defect terminology.,visa/pipe_fryum,0.9161,no
+visa,macaroni1,Industrial visual inspection of visa macaroni1: normal appearance and defect terminology.,visa/macaroni2,0.9145,no
+visa,macaroni2,Industrial visual inspection of visa macaroni2: normal appearance and defect terminology.,visa/macaroni2,0.9201,yes
+visa,pcb1,Industrial visual inspection of visa pcb1: normal appearance and defect terminology.,visa/pcb4,0.9052,no
+visa,pcb2,Industrial visual inspection of visa pcb2: normal appearance and defect terminology.,visa/pcb2,0.9071,yes
+visa,pcb3,Industrial visual inspection of visa pcb3: normal appearance and defect terminology.,visa/pcb3,0.9080,yes
+visa,pcb4,Industrial visual inspection of visa pcb4: normal appearance and defect terminology.,visa/pcb4,0.9146,yes
+visa,pipe_fryum,Industrial visual inspection of visa pipe fryum: normal appearance and defect terminology.,visa/pipe_fryum,0.9141,yes

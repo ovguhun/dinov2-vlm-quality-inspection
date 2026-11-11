@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Quality-control report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "visual_evidence",
+    "inspection_status",
+    "defect_type",
+    "location",
+    "severity_estimate",
+    "recommended_action"
+  ],
+  "properties": {
+    "visual_evidence": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "inspection_status": {
+      "enum": [
+        "normal",
+        "anomalous",
+        "uncertain"
+      ]
+    },
+    "defect_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "\\S"
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "\\S"
+    },
+    "severity_estimate": {
+      "enum": [
+        "limited",
+        "moderate",
+        "extensive",
+        null
+      ]
+    },
+    "recommended_action": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "\\S"
+    }
+  }
+}

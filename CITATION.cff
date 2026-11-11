@@ -1,0 +1,279 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it as below.
+type: software
+title: "DINOv2-Based Industrial Anomaly Detection with Vision-Language-Model-Generated Quality Control Reports"
+abstract: >-
+  Code for an MSc thesis. It compares the Dinomaly anomaly detector with
+  PatchCore and EfficientAD-S on MVTec AD and VisA, and measures how
+  detector evidence and retrieved defect knowledge change the inspection
+  reports written by Qwen2.5-VL-3B-Instruct.
+authors:
+  - family-names: Hun
+    given-names: Mehmet Övgü
+    affiliation: University of Debrecen, Faculty of Informatics
+version: 1.0.0
+license: Apache-2.0
+repository-code: https://github.com/ovguhun/dinov2-vlm-quality-inspection
+keywords:
+  - industrial anomaly detection
+  - vision-language models
+  - retrieval-augmented generation
+  - MVTec AD
+  - VisA
+references:
+  # Detectors and their backbones
+  - type: conference-paper
+    title: "Dinomaly: The Less Is More Philosophy in Multi-Class Unsupervised Anomaly Detection"
+    authors:
+      - {family-names: Guo, given-names: Jia}
+      - {family-names: Lu, given-names: Shuai}
+      - {family-names: Zhang, given-names: Weihang}
+      - {family-names: Chen, given-names: Fang}
+      - {family-names: Li, given-names: Huiqi}
+      - {family-names: Liao, given-names: Hongen}
+    collection-title: "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+    year: 2025
+    start: 20405
+    end: 20415
+    doi: 10.1109/CVPR52734.2025.01900
+  - type: article
+    title: "DINOv2: Learning Robust Visual Features without Supervision"
+    authors:
+      - {family-names: Oquab, given-names: Maxime}
+      - {family-names: Darcet, given-names: Timothée}
+      - {family-names: Moutakanni, given-names: Théo}
+      - {family-names: Vo, given-names: Huy V.}
+      - {family-names: Szafraniec, given-names: Marc}
+      - {family-names: Khalidov, given-names: Vasil}
+      - {family-names: Fernandez, given-names: Pierre}
+      - {family-names: Haziza, given-names: Daniel}
+      - {family-names: Massa, given-names: Francisco}
+      - {family-names: El-Nouby, given-names: Alaaeldin}
+      - {family-names: Assran, given-names: Mahmoud}
+      - {family-names: Ballas, given-names: Nicolas}
+      - {family-names: Galuba, given-names: Wojciech}
+      - {family-names: Howes, given-names: Russell}
+      - {family-names: Huang, given-names: Po-Yao}
+      - {family-names: Li, given-names: Shang-Wen}
+      - {family-names: Misra, given-names: Ishan}
+      - {family-names: Rabbat, given-names: Michael}
+      - {family-names: Sharma, given-names: Vasu}
+      - {family-names: Synnaeve, given-names: Gabriel}
+      - {family-names: Xu, given-names: Hu}
+      - {family-names: Jegou, given-names: Hervé}
+      - {family-names: Mairal, given-names: Julien}
+      - {family-names: Labatut, given-names: Patrick}
+      - {family-names: Joulin, given-names: Armand}
+      - {family-names: Bojanowski, given-names: Piotr}
+    journal: Transactions on Machine Learning Research
+    year: 2024
+    url: https://openreview.net/forum?id=a68SUt6zFt
+  - type: conference-paper
+    title: Vision Transformers Need Registers
+    authors:
+      - {family-names: Darcet, given-names: Timothée}
+      - {family-names: Oquab, given-names: Maxime}
+      - {family-names: Mairal, given-names: Julien}
+      - {family-names: Bojanowski, given-names: Piotr}
+    collection-title: International Conference on Learning Representations (ICLR 2024)
+    year: 2024
+    url: https://arxiv.org/abs/2309.16588
+  - type: conference-paper
+    title: "Towards Total Recall in Industrial Anomaly Detection"
+    authors:
+      - {family-names: Roth, given-names: Karsten}
+      - {family-names: Pemula, given-names: Latha}
+      - {family-names: Zepeda, given-names: Joaquin}
+      - {family-names: Schölkopf, given-names: Bernhard}
+      - {family-names: Brox, given-names: Thomas}
+      - {family-names: Gehler, given-names: Peter}
+    collection-title: "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+    year: 2022
+    start: 14298
+    end: 14308
+    doi: 10.1109/CVPR52688.2022.01392
+  - type: conference-paper
+    title: "EfficientAD: Accurate Visual Anomaly Detection at Millisecond-Level Latencies"
+    authors:
+      - {family-names: Batzner, given-names: Kilian}
+      - {family-names: Heckler, given-names: Lars}
+      - {family-names: König, given-names: Rebecca}
+    collection-title: "2024 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+    year: 2024
+    start: 127
+    end: 137
+    doi: 10.1109/WACV57701.2024.00020
+  - type: software
+    title: EfficientAD
+    notes: Unofficial implementation of EfficientAD.
+    authors:
+      - alias: nelson1425
+    repository-code: https://github.com/nelson1425/EfficientAD
+    commit: fcab5146f84ae17597044ad5ddf1656ccf805401
+    license: Apache-2.0
+  # Detector evaluation: the PRO metric and the AU-PRO code
+  - type: conference-paper
+    title: "Uninformed Students: Student-Teacher Anomaly Detection With Discriminative Latent Embeddings"
+    authors:
+      - {family-names: Bergmann, given-names: Paul}
+      - {family-names: Fauser, given-names: Michael}
+      - {family-names: Sattlegger, given-names: David}
+      - {family-names: Steger, given-names: Carsten}
+    collection-title: "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+    year: 2020
+    start: 4182
+    end: 4191
+    doi: 10.1109/CVPR42600.2020.00424
+  - type: conference-paper
+    title: "Anomalib: A Deep Learning Library for Anomaly Detection"
+    authors:
+      - {family-names: Akcay, given-names: Samet}
+      - {family-names: Ameln, given-names: Dick}
+      - {family-names: Vaidya, given-names: Ashwin}
+      - {family-names: Lakshmanan, given-names: Barath}
+      - {family-names: Ahuja, given-names: Nilesh}
+      - {family-names: Genc, given-names: Utku}
+    collection-title: "2022 IEEE International Conference on Image Processing (ICIP)"
+    year: 2022
+    start: 1706
+    end: 1710
+    doi: 10.1109/ICIP46576.2022.9897283
+  - type: software
+    title: "Anomalib: A Deep Learning Library for Anomaly Detection"
+    authors:
+      - {family-names: Akcay, given-names: Samet}
+      - {family-names: Ameln, given-names: Dick}
+      - {family-names: Vaidya, given-names: Ashwin}
+      - {family-names: Lakshmanan, given-names: Barath}
+      - {family-names: Ahuja, given-names: Nilesh}
+      - {family-names: Genc, given-names: Utku}
+    repository-code: https://github.com/open-edge-platform/anomalib
+    commit: 0be85508edde53a2b1062ee6d1732c85c5b7172e
+    license: Apache-2.0
+  # Datasets; Imagenette supplies the EfficientAD-S penalty images
+  - type: article
+    title: "The MVTec Anomaly Detection Dataset: A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection"
+    authors:
+      - {family-names: Bergmann, given-names: Paul}
+      - {family-names: Batzner, given-names: Kilian}
+      - {family-names: Fauser, given-names: Michael}
+      - {family-names: Sattlegger, given-names: David}
+      - {family-names: Steger, given-names: Carsten}
+    journal: International Journal of Computer Vision
+    volume: 129
+    issue: 4
+    year: 2021
+    start: 1038
+    end: 1059
+    doi: 10.1007/s11263-020-01400-4
+  - type: conference-paper
+    title: "MVTec AD — A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection"
+    authors:
+      - {family-names: Bergmann, given-names: Paul}
+      - {family-names: Fauser, given-names: Michael}
+      - {family-names: Sattlegger, given-names: David}
+      - {family-names: Steger, given-names: Carsten}
+    collection-title: "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+    year: 2019
+    start: 9584
+    end: 9592
+    doi: 10.1109/CVPR.2019.00982
+  - type: conference-paper
+    title: "SPot-the-Difference Self-supervised Pre-training for Anomaly Detection and Segmentation"
+    authors:
+      - {family-names: Zou, given-names: Yang}
+      - {family-names: Jeong, given-names: Jongheon}
+      - {family-names: Pemula, given-names: Latha}
+      - {family-names: Zhang, given-names: Dongqing}
+      - {family-names: Dabeer, given-names: Onkar}
+    collection-title: "Computer Vision – ECCV 2022"
+    year: 2022
+    start: 392
+    end: 408
+    doi: 10.1007/978-3-031-20056-4_23
+  - type: data
+    title: Imagenette
+    authors:
+      - {family-names: Howard, given-names: Jeremy}
+    year: 2019
+    url: https://github.com/fastai/imagenette
+  # Reporting: model, 4-bit NF4 quantisation, text embeddings
+  - type: article
+    title: "Qwen2.5-VL Technical Report"
+    authors:
+      - {family-names: Bai, given-names: Shuai}
+      - {family-names: Chen, given-names: Keqin}
+      - {family-names: Liu, given-names: Xuejing}
+      - {family-names: Wang, given-names: Jialin}
+      - {family-names: Ge, given-names: Wenbin}
+      - {family-names: Song, given-names: Sibo}
+      - {family-names: Dang, given-names: Kai}
+      - {family-names: Wang, given-names: Peng}
+      - {family-names: Wang, given-names: Shijie}
+      - {family-names: Tang, given-names: Jun}
+      - {family-names: Zhong, given-names: Humen}
+      - {family-names: Zhu, given-names: Yuanzhi}
+      - {family-names: Yang, given-names: Mingkun}
+      - {family-names: Li, given-names: Zhaohai}
+      - {family-names: Wan, given-names: Jianqiang}
+      - {family-names: Wang, given-names: Pengfei}
+      - {family-names: Ding, given-names: Wei}
+      - {family-names: Fu, given-names: Zheren}
+      - {family-names: Xu, given-names: Yiheng}
+      - {family-names: Ye, given-names: Jiabo}
+      - {family-names: Zhang, given-names: Xi}
+      - {family-names: Xie, given-names: Tianbao}
+      - {family-names: Cheng, given-names: Zesen}
+      - {family-names: Zhang, given-names: Hang}
+      - {family-names: Yang, given-names: Zhibo}
+      - {family-names: Xu, given-names: Haiyang}
+      - {family-names: Lin, given-names: Junyang}
+    journal: arXiv preprint
+    year: 2025
+    url: https://arxiv.org/abs/2502.13923
+  - type: conference-paper
+    title: "QLoRA: Efficient Finetuning of Quantized LLMs"
+    authors:
+      - {family-names: Dettmers, given-names: Tim}
+      - {family-names: Pagnoni, given-names: Artidoro}
+      - {family-names: Holtzman, given-names: Ari}
+      - {family-names: Zettlemoyer, given-names: Luke}
+    collection-title: Advances in Neural Information Processing Systems 36
+    year: 2023
+    start: 10088
+    end: 10115
+    doi: 10.52202/075280-0441
+  - type: article
+    title: "Text Embeddings by Weakly-Supervised Contrastive Pre-training"
+    authors:
+      - {family-names: Wang, given-names: Liang}
+      - {family-names: Yang, given-names: Nan}
+      - {family-names: Huang, given-names: Xiaolong}
+      - {family-names: Jiao, given-names: Binxing}
+      - {family-names: Yang, given-names: Linjun}
+      - {family-names: Jiang, given-names: Daxin}
+      - {family-names: Majumder, given-names: Rangan}
+      - {family-names: Wei, given-names: Furu}
+    journal: arXiv preprint
+    year: 2022
+    url: https://arxiv.org/abs/2212.03533
+  # Nearest-neighbour search in PatchCore and knowledge retrieval
+  - type: article
+    title: The Faiss Library
+    authors:
+      - {family-names: Douze, given-names: Matthijs}
+      - {family-names: Guzhva, given-names: Alexandr}
+      - {family-names: Deng, given-names: Chengqi}
+      - {family-names: Johnson, given-names: Jeff}
+      - {family-names: Szilvasy, given-names: Gergely}
+      - {family-names: Mazaré, given-names: Pierre-Emmanuel}
+      - {family-names: Lomeli, given-names: Maria}
+      - {family-names: Hosseini, given-names: Lucas}
+      - {family-names: Jégou, given-names: Hervé}
+    journal: IEEE Transactions on Big Data
+    volume: 12
+    issue: 2
+    year: 2026
+    start: 346
+    end: 361
+    doi: 10.1109/TBDATA.2025.3618474

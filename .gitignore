@@ -1,0 +1,25 @@
+# Local only: datasets, model weights, generated files
+# (no trailing slash, so symlinked folders are ignored too)
+/data
+/weights
+/outputs
+
+# Thesis draft and its figure files
+/docs
+/results/figures
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+/build/
+/dist/
+
+# Environments and editors
+.venv/
+.env
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+*Zone.Identifier

@@ -1,0 +1,163 @@
+case_id,condition,answer_digest,usefulness,material_error,contradiction,location_grade,detector_score,detector_decision,detector_attribution,detector_overlay,review_id
+case-001,I0,dbc51bcad685,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-118
+case-001,D0,a076072168f5,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-032
+case-001,D1,3afab2dd1fa9,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-062
+case-002,I0,5446079caee0,not useful,yes,no,missing,n/a,n/a,n/a,n/a,review-128
+case-002,D0,1393815f26de,partly useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-070
+case-002,D1,1bc5e9444f57,useful,no,no,correct,unattempted,unattempted,unattempted,unattempted,review-060
+case-003,I0,7ee9f891421c,useful,no,no,not established,n/a,n/a,n/a,n/a,review-009
+case-003,D0,bdfec97c4fde,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-037
+case-003,D1,f60174809ed2,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-108
+case-004,I0,cb44c44af2ae,not useful,yes,no,wrong,n/a,n/a,n/a,n/a,review-012
+case-004,D0,90b8e42c3dde,not useful,yes,no,not established,unattempted,unattempted,unattempted,unattempted,review-160
+case-004,D1,87043108afe4,partly useful,yes,no,wrong,unattempted,unattempted,fully faithful,fully faithful,review-127
+case-005,I0,d5b40028a387,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-034
+case-005,D0,d5b40028a387,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-094
+case-005,D1,d5b40028a387,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-010
+case-006,I0,9ffb599824e9,not useful,yes,no,missing,n/a,n/a,n/a,n/a,review-129
+case-006,D0,682b7c12be77,not useful,yes,no,wrong,unattempted,unattempted,partial,unattempted,review-065
+case-006,D1,9ffb599824e9,not useful,yes,no,missing,unattempted,unattempted,unattempted,unattempted,review-051
+case-007,I0,9c5e95ce0825,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-140
+case-007,D0,6ffd9b5b7e9b,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-064
+case-007,D1,6ffd9b5b7e9b,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-038
+case-008,I0,234aa53ee495,partly useful,no,no,partial,n/a,n/a,n/a,n/a,review-035
+case-008,D0,7463c26c91a6,partly useful,no,no,partial,unattempted,unattempted,unattempted,unattempted,review-040
+case-008,D1,7463c26c91a6,partly useful,no,no,partial,unattempted,unattempted,unattempted,unattempted,review-073
+case-009,I0,b6ebb9ca7d22,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-146
+case-009,D0,f4a20acaf967,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-141
+case-009,D1,1256b97d0e51,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-086
+case-010,I0,8e9384519baf,partly useful,yes,no,partial,n/a,n/a,n/a,n/a,review-008
+case-010,D0,59ef5e73f8a5,partly useful,no,no,partial,unattempted,unattempted,unattempted,unattempted,review-105
+case-010,D1,7a7e3e4848bb,partly useful,no,no,partial,unattempted,unattempted,unattempted,unattempted,review-002
+case-011,I0,a4635cf72e21,not useful,yes,yes,wrong,n/a,n/a,n/a,n/a,review-104
+case-011,D0,9e31d079952b,not useful,yes,no,wrong,unattempted,unattempted,unattempted,n/a,review-112
+case-011,D1,e134709b67e5,not useful,yes,no,wrong,unattempted,unattempted,unattempted,n/a,review-006
+case-012,I0,fd9d473d1ef5,partly useful,yes,no,partial,n/a,n/a,n/a,n/a,review-069
+case-012,D0,aaa7ca4924ae,not useful,yes,no,wrong,unattempted,unattempted,unattempted,unattempted,review-056
+case-012,D1,f967a83484ad,partly useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-149
+case-013,I0,3be1472337b6,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-082
+case-013,D0,ccb692f00f69,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-143
+case-013,D1,ccb692f00f69,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-093
+case-014,I0,d1a47d590711,useful,no,no,correct,n/a,n/a,n/a,n/a,review-028
+case-014,D0,ed2cd315fe3b,useful,no,no,correct,unattempted,unattempted,unattempted,unattempted,review-097
+case-014,D1,b724bf8b1caa,useful,no,no,correct,unattempted,unattempted,unattempted,unattempted,review-110
+case-015,I0,b8d6f78d59db,useful,no,no,not established,n/a,n/a,n/a,n/a,review-113
+case-015,D0,58087b333f65,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-055
+case-015,D1,300a363263a6,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-058
+case-016,I0,e0d754df8f7d,partly useful,yes,no,not established,n/a,n/a,n/a,n/a,review-053
+case-016,D0,4985c9013c16,partly useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-013
+case-016,D1,930f1e9f9c1b,partly useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-023
+case-017,I0,4ca8c9801b4c,useful,no,no,not established,n/a,n/a,n/a,n/a,review-033
+case-017,D0,9549ae4ae62b,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-078
+case-017,D1,75ebf1552fd6,not useful,yes,yes,wrong,unattempted,unattempted,unattempted,n/a,review-043
+case-018,I0,4d1991b6cf78,not useful,yes,no,not established,n/a,n/a,n/a,n/a,review-124
+case-018,D0,753b343865f5,not useful,yes,no,not established,unattempted,unattempted,unattempted,unattempted,review-133
+case-018,D1,76de3edce728,not useful,yes,yes,wrong,unattempted,unattempted,unattempted,unattempted,review-061
+case-019,I0,7f9380b6d0e3,not useful,yes,yes,wrong,n/a,n/a,n/a,n/a,review-047
+case-019,D0,ab5e214104fd,not useful,yes,yes,wrong,unattempted,unattempted,unattempted,n/a,review-151
+case-019,D1,a4fbe8a51e07,not useful,yes,yes,wrong,unattempted,unattempted,unattempted,n/a,review-081
+case-020,I0,2a3384e270bb,not useful,yes,yes,wrong,n/a,n/a,n/a,n/a,review-100
+case-020,D0,22333d1a2ae7,not useful,yes,no,missing,unattempted,unattempted,unattempted,unattempted,review-019
+case-020,D1,22333d1a2ae7,not useful,yes,no,missing,unattempted,unattempted,unattempted,unattempted,review-063
+case-021,I0,3df2e84c8eab,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-068
+case-021,D0,63a9fff02f01,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-017
+case-021,D1,e914e0a66dae,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-095
+case-022,I0,b53628a2808b,not useful,yes,no,wrong,n/a,n/a,n/a,n/a,review-116
+case-022,D0,f79ecf581931,not useful,yes,no,wrong,unattempted,unattempted,unattempted,unattempted,review-145
+case-022,D1,d245754c423b,partly useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-096
+case-023,I0,baf3b99ccd2a,not useful,yes,no,wrong,n/a,n/a,n/a,n/a,review-159
+case-023,D0,0e220c02edc3,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-057
+case-023,D1,0e220c02edc3,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-052
+case-024,I0,a44508c67ff6,not useful,yes,no,wrong,n/a,n/a,n/a,n/a,review-101
+case-024,D0,b88cba58a9b4,partly useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-092
+case-024,D1,a78d6d892c8d,not useful,yes,yes,not established,unattempted,unattempted,unattempted,unattempted,review-005
+case-025,I0,732d5d5f2971,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-148
+case-025,D0,732d5d5f2971,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-076
+case-025,D1,1df781449dbd,partly useful,yes,yes,wrong,unattempted,unattempted,unattempted,n/a,review-014
+case-026,I0,ab6b62ef2c9d,partly useful,yes,yes,partial,n/a,n/a,n/a,n/a,review-083
+case-026,D0,4e78ed26e52b,partly useful,yes,yes,partial,unattempted,unattempted,unattempted,unattempted,review-079
+case-026,D1,e870abf60333,useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-155
+case-027,I0,375771957a0f,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-117
+case-027,D0,4214483d742f,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-142
+case-027,D1,861425fc3130,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-134
+case-028,I0,00ed13fcaedb,useful,no,no,partial,n/a,n/a,n/a,n/a,review-027
+case-028,D0,e2490d7d8c46,partly useful,no,no,partial,unattempted,unattempted,unattempted,unattempted,review-046
+case-028,D1,3b21c6eedc25,partly useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-031
+case-029,I0,91024accd01a,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-139
+case-029,D0,91024accd01a,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-120
+case-029,D1,5817f4fedd2c,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-020
+case-030,I0,4d7d1257ce36,partly useful,yes,no,partial,n/a,n/a,n/a,n/a,review-015
+case-030,D0,76b99b1889a9,partly useful,no,no,partial,unattempted,unattempted,unattempted,unattempted,review-084
+case-030,D1,77a8a6ce749b,partly useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-049
+case-031,I0,764446df7f65,partly useful,yes,no,not established,n/a,n/a,n/a,n/a,review-136
+case-031,D0,10e7e5a8be98,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-153
+case-031,D1,eb2cb52d6a27,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-126
+case-032,I0,fd2a22d1d720,not useful,yes,no,wrong,n/a,n/a,n/a,n/a,review-111
+case-032,D0,7691b5e104dc,not useful,yes,no,missing,unattempted,unattempted,unattempted,n/a,review-039
+case-032,D1,595842dbd05a,not useful,yes,no,missing,unattempted,unattempted,unattempted,n/a,review-026
+case-033,I0,7ac70b460aa6,partly useful,yes,no,not established,n/a,n/a,n/a,n/a,review-077
+case-033,D0,bedfce0d674d,partly useful,yes,no,not established,unattempted,unattempted,unattempted,n/a,review-024
+case-033,D1,fb0795568930,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-162
+case-034,I0,6d1ab40c042c,not useful,yes,no,missing,n/a,n/a,n/a,n/a,review-059
+case-034,D0,d6b253e243bb,not useful,yes,no,wrong,unattempted,unattempted,unattempted,unattempted,review-121
+case-034,D1,bbb4e2f79674,not useful,yes,no,missing,unattempted,unattempted,unattempted,unattempted,review-001
+case-035,I0,ad0adfe5945f,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-103
+case-035,D0,ad0adfe5945f,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-156
+case-035,D1,ad0adfe5945f,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-042
+case-036,I0,a19f523f3bf2,partly useful,yes,no,correct,n/a,n/a,n/a,n/a,review-122
+case-036,D0,88c60f1da7ea,useful,no,no,correct,unattempted,unattempted,unattempted,unattempted,review-072
+case-036,D1,28ceb526622b,useful,no,no,correct,unattempted,unattempted,unattempted,unattempted,review-161
+case-037,I0,512c38a38bdb,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-074
+case-037,D0,ddf71819444a,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-021
+case-037,D1,6f1ed45d6935,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-048
+case-038,I0,be2d6732eed0,partly useful,yes,no,correct,n/a,n/a,n/a,n/a,review-135
+case-038,D0,4140c5c4b951,partly useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-088
+case-038,D1,731668f3ad8c,partly useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-131
+case-039,I0,fee8a0395365,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-071
+case-039,D0,9a78c082bb0f,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-004
+case-039,D1,9a78c082bb0f,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-036
+case-040,I0,c33d55519126,not useful,yes,no,reference unavailable,n/a,n/a,n/a,n/a,review-016
+case-040,D0,cf043c416f85,not useful,yes,no,reference unavailable,unattempted,unattempted,unattempted,unattempted,review-011
+case-040,D1,cf043c416f85,not useful,yes,no,reference unavailable,unattempted,unattempted,unattempted,unattempted,review-045
+case-041,I0,876c3c4da11b,not useful,yes,no,wrong,n/a,n/a,n/a,n/a,review-138
+case-041,D0,c117c33c293d,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-115
+case-041,D1,c117c33c293d,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-154
+case-042,I0,bd728f7b3a42,not useful,yes,no,wrong,n/a,n/a,n/a,n/a,review-050
+case-042,D0,c3b299091f63,not useful,yes,no,wrong,unattempted,unattempted,inconsistent,unattempted,review-157
+case-042,D1,c3b299091f63,not useful,yes,no,wrong,unattempted,unattempted,inconsistent,unattempted,review-025
+case-043,I0,75f0e526a41d,not useful,yes,no,wrong,n/a,n/a,n/a,n/a,review-099
+case-043,D0,c10f2c8e446a,not useful,yes,yes,wrong,unattempted,unattempted,unattempted,n/a,review-029
+case-043,D1,840d928cb609,not useful,yes,no,wrong,unattempted,unattempted,unattempted,n/a,review-090
+case-044,I0,3e3b4ba63f2b,not useful,yes,no,wrong,n/a,n/a,n/a,n/a,review-150
+case-044,D0,7559a049636b,not useful,yes,no,wrong,unattempted,unattempted,unattempted,unattempted,review-158
+case-044,D1,9339889918d1,not useful,yes,no,wrong,unattempted,unattempted,unattempted,unattempted,review-109
+case-045,I0,4ffef41eef9b,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-044
+case-045,D0,7da718cd5785,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-119
+case-045,D1,7da718cd5785,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-114
+case-046,I0,892fa3bd28f9,not useful,yes,no,missing,n/a,n/a,n/a,n/a,review-123
+case-046,D0,174af78e9067,not useful,yes,no,missing,unattempted,unattempted,unattempted,unattempted,review-144
+case-046,D1,174af78e9067,not useful,yes,no,missing,unattempted,unattempted,unattempted,unattempted,review-087
+case-047,I0,5d9093361f40,not useful,yes,yes,not established,n/a,n/a,n/a,n/a,review-003
+case-047,D0,e3b5b40ac281,not useful,yes,yes,not established,unattempted,unattempted,unattempted,n/a,review-102
+case-047,D1,37703e656b98,not useful,yes,yes,not established,unattempted,unattempted,unattempted,n/a,review-137
+case-048,I0,00e66a98f07a,not useful,yes,yes,not established,n/a,n/a,n/a,n/a,review-066
+case-048,D0,31e3b41c4d45,partly useful,yes,no,wrong,unattempted,unattempted,unattempted,unattempted,review-091
+case-048,D1,bc5ab4bd1a15,not useful,yes,no,not established,unattempted,unattempted,unattempted,unattempted,review-054
+case-049,I0,e02f920a8459,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-007
+case-049,D0,85b20589e4d8,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-107
+case-049,D1,e607739ac833,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-022
+case-050,I0,a1484a06925c,not useful,yes,no,partial,n/a,n/a,n/a,n/a,review-106
+case-050,D0,5b52bc1f91d7,not useful,yes,no,partial,unattempted,unattempted,partial,unattempted,review-147
+case-050,D1,2eaae8bf9833,not useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-152
+case-051,I0,2c01a885151f,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-018
+case-051,D0,2c01a885151f,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-030
+case-051,D1,2c01a885151f,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-089
+case-052,I0,9a28ec42495f,partly useful,yes,yes,partial,n/a,n/a,n/a,n/a,review-132
+case-052,D0,8a594bfbee38,partly useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-085
+case-052,D1,9c61d786c576,partly useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-075
+case-053,I0,db4a27b829a2,useful,no,no,appropriate n/a,n/a,n/a,n/a,n/a,review-067
+case-053,D0,5aa4a5712eef,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-041
+case-053,D1,7e9ad7f74331,useful,no,no,appropriate n/a,unattempted,unattempted,unattempted,n/a,review-130
+case-054,I0,bbec24705d5b,partly useful,yes,no,partial,n/a,n/a,n/a,n/a,review-098
+case-054,D0,1b02d310a162,partly useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-125
+case-054,D1,b1233b430732,partly useful,yes,no,partial,unattempted,unattempted,unattempted,unattempted,review-080
