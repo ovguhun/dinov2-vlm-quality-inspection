@@ -1,11 +1,28 @@
 # DINOv2-Based Industrial Anomaly Detection with Vision-Language-Model-Generated Quality Control Reports
 
-Code and results for the MSc thesis in Data Science of Mehmet Övgü Hun,
-University of Debrecen, Faculty of Informatics. The study evaluates Dinomaly,
-a DINOv2-based anomaly detector, alongside PatchCore and EfficientAD-S on
-MVTec AD and VisA. It then tests whether a frozen Qwen2.5-VL-3B-Instruct
-writes more accurate inspection reports when it receives Dinomaly's evidence
-and a retrieved knowledge card about the product category.
+**MSc thesis in Data Science** · University of Debrecen, Faculty of Informatics · 2026
+
+**Author:** Mehmet Övgü Hun
+
+---
+
+This repository holds the code and the results of the thesis. The study has
+two parts:
+
+1. **Anomaly detection.** Dinomaly, a DINOv2-based anomaly detector, is
+   compared with PatchCore and EfficientAD-S on MVTec AD and VisA.
+
+2. **Inspection reports.** A frozen Qwen2.5-VL-3B-Instruct writes structured
+   inspection reports. The study tests whether they become more accurate
+   when the model receives Dinomaly's evidence and a retrieved knowledge card
+   about the product category.
+
+**Contents:** [Overview](#overview) · [Results](#results) ·
+[Repository layout](#repository-layout) · [Installation](#installation) ·
+[Quick check](#quick-check) · [Data and weights](#data-and-weights) ·
+[Reproducing the experiments](#reproducing-the-experiments) ·
+[Reproducibility](#reproducibility) · [Licences](#licences) ·
+[Citation](#citation)
 
 ## Overview
 
@@ -18,36 +35,42 @@ normal and one anomalous from each of the 27 categories, in three conditions:
 | D0: + detector | the image with Dinomaly's score, cutoff and prediction, and an overlay of its anomaly map when the prediction is anomalous |
 | D1: + knowledge card | D0 with a knowledge card about the product category, when E5-small-v2 retrieves that category's own card |
 
-Research questions, as stated in the thesis (VLM: vision-language model):
+### Research questions
 
-- **RQ1:** How does anomaly detection based on patch features from the
-  frozen pretrained image encoder DINOv2 (implemented via Dinomaly) perform
-  in terms of image-level classification and pixel-level localisation when
-  compared to PatchCore and EfficientAD-S on the MVTec AD and VisA datasets?
-- **RQ2:** When a VLM is tasked with generating quality control reports
-  about inspected products, how does providing anomaly scores and
-  anomaly-map visualisations from a DINOv2-based anomaly detector affect the
-  correctness of the resulting reports and their evidence consistency in
-  comparison to using product images alone?
-- **RQ3:** When generating inspection reports conditioned on information
-  from an anomaly detector, how does supplementing the VLM with potentially
-  relevant information retrieved from a curated defect knowledge base affect
-  the correctness of the resulting reports and the share of reports that
-  contain unsupported or incorrect statements?
+As stated in the thesis (VLM: vision-language model).
 
-Key findings:
+**RQ1.** How does anomaly detection based on patch features from the frozen
+pretrained image encoder DINOv2 (implemented via Dinomaly) perform in terms of
+image-level classification and pixel-level localisation when compared to
+PatchCore and EfficientAD-S on the MVTec AD and VisA datasets?
 
-- Dinomaly has the highest mean image AUROC and AU-PRO on both datasets.
-  Mean pixel AUROC differs by at most 0.4 points between the detectors.
-- With Dinomaly's evidence (D0), correct normal/anomalous status rises from
-  34 to 42 of 54 reports, and reports with a material error fall from 32
-  to 26.
-- The knowledge card (D1) leaves correct status at 42 of 54; useful reports
+**RQ2.** When a VLM is tasked with generating quality control reports about
+inspected products, how does providing anomaly scores and anomaly-map
+visualisations from a DINOv2-based anomaly detector affect the correctness of
+the resulting reports and their evidence consistency in comparison to using
+product images alone?
+
+**RQ3.** When generating inspection reports conditioned on information from an
+anomaly detector, how does supplementing the VLM with potentially relevant
+information retrieved from a curated defect knowledge base affect the
+correctness of the resulting reports and the share of reports that contain
+unsupported or incorrect statements?
+
+### Key findings
+
+- **Detectors.** Dinomaly has the highest mean image AUROC and AU-PRO on both
+  datasets. Mean pixel AUROC differs by at most 0.4 points between the
+  detectors.
+
+- **Detector evidence (D0).** Correct normal/anomalous status rises from 34
+  to 42 of 54 reports, and reports with a material error fall from 32 to 26.
+
+- **Knowledge card (D1).** Correct status stays at 42 of 54. Useful reports
   go from 24 to 25, and reports with a material error from 26 to 28.
 
 ## Results
 
-Both studies at a glance; click a chart for its full size.
+Both studies at a glance. Click a chart for its full size.
 
 <table>
   <tr>
@@ -62,8 +85,8 @@ Both studies at a glance; click a chart for its full size.
 
 ### Anomaly detection (RQ1)
 
-Mean over the categories of each dataset, in per cent; the best value per
-dataset is in bold:
+Mean over the categories of each dataset, in per cent. The best value per
+dataset is in bold.
 
 | Detector | Dataset | Image AUROC | Pixel AUROC | AU-PRO |
 | --- | --- | ---: | ---: | ---: |
@@ -74,18 +97,25 @@ dataset is in bold:
 | EfficientAD-S | VisA | 97.91 | 98.77 | 91.90 |
 | Dinomaly | VisA | **98.85** | 98.77 | **95.10** |
 
-On VisA, EfficientAD-S and Dinomaly both round to 98.77 in pixel AUROC, so
-neither value is in bold.
-Image metrics use each detector's own image score. Pixel metrics and AU-PRO
-(up to a false-positive rate of 0.3) are computed on a 256 x 256 grid over
-the image region that all three anomaly maps cover, so they are not
-comparable with the values in the detector papers. Per-category results,
-image and pixel AP and F1-max are in each detector's `metrics.csv` and
-`summary.csv` under [results/detector/](results/detector/).
+Notes on the table:
 
-Image AUROC, AU-PRO, pixel AUROC and pixel AP for every category are drawn in
-[comparison_mvtec_ad.png](results/detector/comparison_mvtec_ad.png) and
-[comparison_visa.png](results/detector/comparison_visa.png).
+- On VisA, EfficientAD-S and Dinomaly both round to 98.77 in pixel AUROC, so
+  neither value is in bold.
+
+- Image metrics use each detector's own image score.
+
+- Pixel metrics and AU-PRO (up to a false-positive rate of 0.3) are computed
+  on a 256 x 256 grid over the image region that all three anomaly maps
+  cover. They are therefore not comparable with the values in the detector
+  papers.
+
+- Per-category results, image and pixel AP and F1-max are in each detector's
+  `metrics.csv` and `summary.csv` under
+  [results/detector/](results/detector/).
+
+- Charts for every category (image AUROC, AU-PRO, pixel AUROC and pixel AP):
+  [MVTec AD](results/detector/comparison_mvtec_ad.png) and
+  [VisA](results/detector/comparison_visa.png).
 
 ### Inspection reports (RQ2, RQ3)
 
@@ -97,19 +127,27 @@ Reports out of 54 per condition ([results/reports/](results/reports/)):
 | Useful report | 21/54 (38.9%) | 24/54 (44.4%) | 25/54 (46.3%) |
 | Report with a material error | 32/54 (59.3%) | 26/54 (48.1%) | 28/54 (51.9%) |
 
-Dinomaly's own prediction, anomalous when its score is above a per-category
-cutoff (the 0.98 quantile of its scores on the category's other normal test
-images), is correct for 53 of the 54 images. In D1, 24 of the 27 categories
-retrieved their own knowledge card; fryum, macaroni1 and pcb1 retrieved
-another category's, so their D1 reports got no card.
+How to read the table:
 
-Each report is graded against reference answers for its image. A material
-error is an explicit statement or recommendation that is contradicted or
-lacks necessary support. The material-error grade is a yes or no per report
-and does not distinguish unsupported from contradicted statements. The share
-of reports with a material error is the second outcome named in RQ3.
-[results/reports/README.md](results/reports/README.md) describes the grades,
-and `summary.csv` and `paired_changes.csv` there hold all measures.
+- **Detector alone.** Dinomaly's own prediction is anomalous when its score
+  is above a per-category cutoff (the 0.98 quantile of its scores on the
+  category's other normal test images). It is correct for 53 of the 54
+  images.
+
+- **Knowledge cards.** In D1, 24 of the 27 categories retrieved their own
+  knowledge card. Fryum, macaroni1 and pcb1 retrieved another category's
+  card, so their D1 reports got no card.
+
+- **Grading.** Each report is graded against reference answers for its
+  image. A material error is an explicit statement or recommendation that is
+  contradicted or lacks necessary support. The grade is a yes or no per
+  report and does not distinguish unsupported from contradicted statements.
+  The share of reports with a material error is the second outcome named in
+  RQ3.
+
+- **Files.** [results/reports/README.md](results/reports/README.md)
+  describes the grades, and `summary.csv` and `paired_changes.csv` there
+  hold all measures.
 
 ## Repository layout
 
